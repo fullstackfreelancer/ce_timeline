@@ -1,0 +1,24 @@
+tt_content {
+    ce_timeline =< lib.contentElement
+    ce_timeline {
+        templateName = Timeline
+        extbase.controllerExtensionName = ce_timeline
+        dataProcessing {
+
+            // Request all timeline entries that are related to the content element record
+            // and assign them to the Fluid template as "entries"
+            10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor
+            10 {
+                if.isTrue.field = uid
+                table = tx_cetimeline_domain_model_entry
+                pidInList = this
+                where.field = uid
+                where.intval = 1
+                where.dataWrap = pce = |
+                orderBy = tx_cetimeline_domain_model_entry.sorting
+                as = entries
+            }
+
+        }
+    }
+}

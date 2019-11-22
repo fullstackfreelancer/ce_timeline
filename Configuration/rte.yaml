@@ -1,0 +1,55 @@
+imports:
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Processing.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Base.yaml" }
+    - { resource: "EXT:rte_ckeditor/Configuration/RTE/Editor/Plugins.yaml" }
+
+editor:
+  config:
+    contentsCss: ["EXT:rte_ckeditor/Resources/Public/Css/contents.css"]
+    width: "600px"
+    resize_enabled: true
+    resize_dir: 'both'
+    resize_maxWidth: 750
+    resize_minWidth: 400
+    uiColor: "#F8F8F8"
+    format_tags: "p;h1;h2;h3;h4;h5;pre"
+    allowTags: "span"
+    stylesSet:
+      - { name: "Text links", element: "p", attributes: { 'class': 'align-left' }}
+      - { name: "Text mittig", element: "p", attributes: { 'class': 'align-center' }}
+      - { name: "Text rechts", element: "p", attributes: { 'class': 'align-right' }}
+      - { name: "Inlet blue", element: "span", attributes: { 'class': 'inlet' }}
+      - { name: "Contact button", element: "a", attributes: { 'class': 'contact-button like-h3' }}
+    toolbar:
+      - [ 'Styles', 'Format' ]
+      - [ 'Bold', 'Italic', 'Blockquote' ]
+      - [ 'Link', 'Unlink' ]
+      - [ 'NumberedList', 'BulletedList']
+      - [ 'Paste', 'PasteFromWord' ]
+      - [ 'Undo', 'Redo', 'Source' ]
+
+    extraPlugins:
+      - justify
+      - specialchar
+      - showblocks
+      - codesnippet
+
+    justifyClasses:
+      - align-left
+      - align-center
+      - align-right
+      - align-justify
+
+    codeSnippet_theme: 'monokai_sublime'
+
+    #external config
+    youtube_width: '550'
+
+    removePlugins:
+      - image
+
+    removeButtons:
+
+processing:
+  allowTags:
+    - iframe

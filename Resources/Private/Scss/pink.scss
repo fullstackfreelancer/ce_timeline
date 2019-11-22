@@ -1,0 +1,14 @@
+$time-color: white;
+$time-background-color: #e72fe9;
+
+$panel-border-color: #e72fe9;
+$panel-border-color-secondary: lighten(#e72fe9,20%);
+$panel-arrow-color: #e72fe9;
+$panel-background-color: transparent;
+$panel-headings-color: inherit;
+$panel-text-color: inherit;
+$panel-link-color: red;
+$panel-border-width: 2px;
+$panel-shadow: 4px 4px 30px rgba(0,0,0,0.1);
+
+@import "master.scss";

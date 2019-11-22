@@ -1,0 +1,5 @@
+page{
+    includeCSS{
+        ce-timeline = EXT:ce_timeline/Resources/Public/Css/pink.css
+    }
+}

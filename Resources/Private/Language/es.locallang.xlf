@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file target-language="es" datatype="plaintext" original="messages" date="2019-11-22T00:49:26Z" product-name="ce_timeline">
+		<header/>
+		<body>
+			<trans-unit id="entries">
+				<target>Entradas</target>
+			</trans-unit>
+			<trans-unit id="ce_title">
+				<target>Cronología (Timeline)</target>
+			</trans-unit>
+			<trans-unit id="ce_description">
+				<target>Crea una línea de tiempo histórica con cualquier cantidad de entradas que se pueden ordenar manualmente</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

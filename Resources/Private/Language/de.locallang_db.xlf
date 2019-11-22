@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<xliff version="1.0">
+	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-11-22T00:49:26Z" product-name="ce_timeline">
+		<header/>
+		<body>
+			<trans-unit id="tx_cetimeline_domain_model_entry">
+				<target>Timeline-Eintrag</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header">
+				<target>Überschrift</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout">
+				<target>Überschriftentyp</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.default">
+				<target>Standard</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h1">
+				<target>H1</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h2">
+				<target>H2</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h3">
+				<target>H3</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h4">
+				<target>H4</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h5">
+				<target>H5</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h6">
+				<target>H6</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.description">
+				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.position">
+				<target>Position</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.position.left">
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.position.right">
+				<target>Rechts</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof">
+				<target>Eintragstyp</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.textblock">
+				<target>Texteintrag</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.timeentry">
+				<target>Zeiteintrag</target>
+			</trans-unit>
+		</body>
+	</file>
+</xliff>

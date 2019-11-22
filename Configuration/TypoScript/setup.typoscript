@@ -1,0 +1,13 @@
+<INCLUDE_TYPOSCRIPT: source="DIR:EXT:ce_timeline/Configuration/TypoScript/Setup" extensions="typoscript">
+
+lib.contentElement{
+    templateRootPaths{
+        1277 = EXT:ce_timeline/Resources/Private/Templates/
+    }
+    partialRootPaths{
+        1277 = EXT:ce_timeline/Resources/Private/Partials/
+    }
+    layoutRootPaths{
+        1277 = EXT:ce_timeline/Resources/Private/Layouts/
+    }
+}

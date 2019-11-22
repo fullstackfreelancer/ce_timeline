@@ -1,0 +1,15 @@
+mod.wizards.newContentElement.wizardItems.common {
+    elements {
+        ce_timeline {
+            iconIdentifier = timeline-icon
+            title = LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_title
+            description = LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_description
+            tt_content_defValues {
+                CType = ce_timeline
+            }
+        }
+    }
+    show := addToList(ce_timeline)
+}
+
+mod.web_layout.tt_content.preview.ce_timeline = EXT:ce_timeline/Resources/Private/Templates/Preview/Timeline.html

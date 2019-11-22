@@ -1,0 +1,10 @@
+plugin.tx_ce_timeline{
+    settings{
+
+    }
+    view{
+        layoutRootPath = EXT:ce_timeline/Resources/Private/Layouts/
+        partialRootPath = EXT:ce_timeline/Resources/Private/Partials/
+        templateRootPath = EXT:ce_timeline/Resources/Private/Templates/
+    }
+}

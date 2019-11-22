@@ -13,6 +13,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 - Does not require any JavaScript
 - Does not require any other Extension
 - Translated in English, German and Spanish
+- Works seamlessly with bootstrap_package and other extensions
 
 ## Installation
 

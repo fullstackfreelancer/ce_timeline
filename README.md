@@ -2,6 +2,11 @@
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
+## Upgrade from version 1.0.0 to version 2.0.0
+- Overwrite/install the extension
+- Go to Maintenance > Analyze Database Structure and remove some tables that we don't need anymore
+- Clear all caches and have fun!
+
 ## Features
 
 - User friendly and very easy to handle

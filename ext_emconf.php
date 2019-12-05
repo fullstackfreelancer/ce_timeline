@@ -6,10 +6,10 @@ $EM_CONF[$_EXTKEY] = array (
     'author' => 'Simon Köhler',
     'author_email' => 'info@simon-koehler.com',
     'author_company' => 'simon-koehler.com',
-    'state' => 'beta',
+    'state' => 'stable',
     'uploadfolder' => '0',
     'clearCacheOnLoad' => 0,
-    'version' => '1.0.0',
+    'version' => '2.0.0',
     'constraints' =>
     array (
         'depends' => array (

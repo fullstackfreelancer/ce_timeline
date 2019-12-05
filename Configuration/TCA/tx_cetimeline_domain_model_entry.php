@@ -22,14 +22,14 @@ return [
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, hidden, comment, child_comment, parent_record, parent_comment, is_root, likes',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, comment, child_comment, parent_record, parent_comment, is_root, likes',
     ],
     'types' => [
         '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description'],
     ],
     'palettes' =>[
         'settings' =>[
-            'showitem' => 'position,typeof,hidden',
+            'showitem' => 'position,typeof, hidden',
         ],
         'titles' =>[
             'showitem' => 'header,header_layout',
@@ -95,6 +95,7 @@ return [
             ],
         ],
         'header_layout' => [
+            'displayCond' => 'FIELD:typeof:=:0',
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout',
             'config' => [
@@ -113,6 +114,7 @@ return [
             ]
         ],
         'description' => [
+            'displayCond' => 'FIELD:typeof:=:0',
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.description',
             'config' => [
@@ -123,6 +125,7 @@ return [
             'defaultExtras' => 'richtext[]',
         ],
         'position' => [
+            'displayCond' => 'FIELD:typeof:=:0',
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.position',
             'config' => [

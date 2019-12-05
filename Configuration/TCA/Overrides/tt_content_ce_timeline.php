@@ -66,7 +66,6 @@ call_user_func(function () {
                 'type' => 'inline',
                 'foreign_table' => 'tx_cetimeline_domain_model_entry',
                 'foreign_field' => 'pce',
-                'maxitems' => 10,
                 'appearance' => [
                     'collapseAll' => 1,
                     'expandSingle' => 1,

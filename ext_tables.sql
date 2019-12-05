@@ -29,7 +29,6 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 
 	PRIMARY KEY (uid),
 	KEY parent (pid),
-	KEY t3ver_oid (t3ver_oid,t3ver_wsid),
     KEY language (l10n_parent,sys_language_uid)
 
 );

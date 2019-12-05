@@ -3,6 +3,9 @@
 	<file source-language="en" datatype="plaintext" original="messages" date="2019-11-22T00:49:26Z" product-name="ce_timeline">
 		<header/>
 		<body>
+			<trans-unit id="tx_cetimeline_domain_model_entry.hidden">
+				<source>Hide</source>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry">
 				<source>Timeline Entry</source>
 			</trans-unit>

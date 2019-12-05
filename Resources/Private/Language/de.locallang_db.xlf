@@ -3,6 +3,9 @@
 	<file source-language="en" target-language="de" datatype="plaintext" original="messages" date="2019-11-22T00:49:26Z" product-name="ce_timeline">
 		<header/>
 		<body>
+			<trans-unit id="tx_cetimeline_domain_model_entry.hidden">
+				<target>Deaktivieren</target>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry">
 				<target>Timeline-Eintrag</target>
 			</trans-unit>

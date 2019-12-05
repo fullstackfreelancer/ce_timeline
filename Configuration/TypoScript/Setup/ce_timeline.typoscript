@@ -4,7 +4,6 @@ tt_content {
         templateName = Timeline
         extbase.controllerExtensionName = ce_timeline
         dataProcessing {
-
             // Request all timeline entries that are related to the content element record
             // and assign them to the Fluid template as "entries"
             10 = TYPO3\CMS\Frontend\DataProcessing\DatabaseQueryProcessor

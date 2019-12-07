@@ -2,9 +2,7 @@
     "name": "koehlersimon/ce-timeline",
     "description": "Enables a new content element of type Timeline",
     "type": "typo3-cms-extension",
-    "version": "2.0.1",
-    "minimum-stability": "dev",
-    "prefer-stable": "true",
+    "version": "2.0.2",
     "require": {
         "typo3/cms-core": "^9.5.0"
     },
@@ -12,7 +10,6 @@
         "TYPO3",
         "extension",
         "timeline",
-        "slugs",
         "frontend",
         "plugin",
         "css"

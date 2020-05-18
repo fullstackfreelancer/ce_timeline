@@ -18,11 +18,11 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,ad_type,is_top,description',
+        'searchFields' => 'header,description',
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, l10n_diffsource, comment, child_comment, parent_record, parent_comment, is_root, likes',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, position, typeof',
     ],
     'types' => [
         '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description'],

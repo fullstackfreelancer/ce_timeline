@@ -18,7 +18,7 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime',
         ],
-        'searchFields' => 'title,ad_type,is_top,description',
+        'searchFields' => 'title,description',
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline.svg'
     ],
     'interface' => [

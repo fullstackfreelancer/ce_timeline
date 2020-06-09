@@ -2,6 +2,15 @@
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
+## Version 2.0.3 now with online DEMO
+This is a bugfix and compatibility release for TYPO3 version 10. New features are coming with the next version.
+I finally found the time to create a little DEMO of the extension here:
+https://simon-koehler.com/en/products/ce-timeline
+
+## Upgrade from version 2.0.2 to version 2.0.3
+- Overwrite/install the extension
+- Clear all caches and have fun!
+
 ## Upgrade from version 1.0.0 to version 2.0.xx
 - Overwrite/install the extension
 - Go to Maintenance > Analyze Database Structure and remove some tables that we don't need anymore
@@ -19,6 +28,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 - Does not require any other Extension
 - Translated in English, German and Spanish
 - Works seamlessly with bootstrap_package and other extensions
+- SASS files included (see: /Resources/Private/Scss/)
 
 ## Installation
 

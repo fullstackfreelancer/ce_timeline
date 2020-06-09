@@ -22,7 +22,7 @@
         }
     ],
     "replace": {
-        "ce-timeline": "self.version",
+        "koehlersimon/ce-timeline": "self.version",
         "typo3-ter/ce-timeline": "self.version"
     }
 }

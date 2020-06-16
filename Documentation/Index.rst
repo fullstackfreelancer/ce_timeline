@@ -1,3 +1,5 @@
+.. include:: Includes.txt
+
 .. _start:
 
 =====================
@@ -11,3 +13,9 @@ Timeline Content Element
 **About this manual:**
 
 This manual is about the TYPO3 extension "ce_timeline".
+
+.. toctree::
+   :hidden:
+
+   Introduction
+   Configuration

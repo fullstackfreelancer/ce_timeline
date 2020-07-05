@@ -139,7 +139,6 @@ return [
             ]
         ],
         'typeof' => [
-            'onChange' => 'reload',
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof',
             'config' => [

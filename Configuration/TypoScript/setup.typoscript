@@ -11,3 +11,17 @@ lib.contentElement{
         1277 = EXT:ce_timeline/Resources/Private/Layouts/
     }
 }
+
+lib.timelineContentElements = CONTENT
+lib.timelineContentElements.table = tt_content
+lib.timelineContentElements.select {
+
+     # "sorting" is a column from the tt_content table and
+     # keeps track of the sorting order, which was specified in
+     # the backend.
+     orderBy = sorting
+
+     # Only select content from column "0" (the column called
+     # "normal").
+     where = colPos = 0
+}

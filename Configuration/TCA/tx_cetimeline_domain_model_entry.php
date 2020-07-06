@@ -22,10 +22,10 @@ return [
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline.svg'
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, position, typeof',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, position, typeof, content_elements',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, content_elements'],
     ],
     'palettes' =>[
         'settings' =>[
@@ -138,6 +138,25 @@ return [
                 ],
             ]
         ],
+        'content_elements' => [
+            'displayCond' => 'FIELD:typeof:=:2',
+            'exclude' => true,
+            'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof',
+            'config' => [
+                'type' => 'inline',
+                'foreign_table' => 'tt_content',
+                'foreign_field' => 'timeline_parent',
+                'overrideChildTca' => [
+                    'columns' => [
+                        'colPos' => [
+                            'config' => [
+                                'default' => '1978',
+                            ],
+                        ],
+                    ],
+                ],
+            ]
+        ],
         'typeof' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof',
@@ -148,6 +167,7 @@ return [
                 'items' => [
                     ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textblock', 0],
                     ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.timeentry', 1],
+                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.content', 2],
                 ],
             ]
         ]

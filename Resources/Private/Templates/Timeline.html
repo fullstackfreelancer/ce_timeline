@@ -16,6 +16,9 @@
                 <f:case value="1">
                     <f:render partial="Time" arguments="{entry:entry.data}"/>
                 </f:case>
+                <f:case value="2">
+                    <f:render partial="Content" arguments="{entry:entry}"/>
+                </f:case>
             </f:switch>
         </f:for>
     </ul>

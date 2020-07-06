@@ -57,6 +57,9 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.timeentry">
 				<target>Tiempo</target>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.contenido">
+				<target>Contenido</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

@@ -12,6 +12,7 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 	description text DEFAULT '' NOT NULL,
 	position varchar(255) DEFAULT '' NOT NULL,
 	typeof varchar(255) DEFAULT '' NOT NULL,
+	content_elements int(11) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,
@@ -34,5 +35,6 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 );
 
 CREATE TABLE tt_content (
-	timeline_entries int(11) unsigned DEFAULT '0' NOT NULL
+	timeline_entries int(11) unsigned DEFAULT '0' NOT NULL,
+	timeline_parent int(11) unsigned DEFAULT '0' NOT NULL
 );

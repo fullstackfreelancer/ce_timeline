@@ -1,10 +1,20 @@
 {
-    "name": "koehlersimon/ce-timeline",
-    "description": "Enables a new content element of type Timeline",
+    "name": "simonkoehler/ce-timeline",
     "type": "typo3-cms-extension",
     "version": "2.0.3",
+    "description": "Enables a new content element of type Timeline",
+    "homepage": "https://simon-koehler.com/en/products/ce-timeline",
+    "authors": [
+        {
+            "name": "Simon Köhler",
+            "email": "info@simon-koehler.com",
+            "homepage": "https://simon-koehler.com/en",
+            "role": "Developer"
+        }
+    ],
+    "license": "GPL-3.0-or-later",
     "require": {
-        "typo3/cms-core": "^10.4.2"
+        "typo3/cms-core": "^9.5 || ^10.5"
     },
     "keywords": [
         "TYPO3",
@@ -14,15 +24,8 @@
         "plugin",
         "css"
     ],
-    "homepage": "https://simon-koehler.com/",
-    "authors": [
-        {
-            "name": "Simon Köhler",
-            "email": "info@simon-koehler.com"
-        }
-    ],
     "replace": {
-        "koehlersimon/ce-timeline": "self.version",
+        "simonkoehler/ce-timeline": "self.version",
         "typo3-ter/ce-timeline": "self.version"
     }
 }

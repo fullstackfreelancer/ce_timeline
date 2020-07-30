@@ -4,7 +4,7 @@
 		<header/>
 		<body>
 			<trans-unit id="entries">
-				<source>Timeline Entries</source>
+				<source>Entries</source>
 			</trans-unit>
 			<trans-unit id="ce_title">
 				<source>Timeline</source>

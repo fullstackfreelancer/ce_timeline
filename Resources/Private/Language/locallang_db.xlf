@@ -58,7 +58,7 @@
 				<source>Time</source>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.content">
-				<source>Content</source>
+				<source>Content Element</source>
 			</trans-unit>
 		</body>
 	</file>

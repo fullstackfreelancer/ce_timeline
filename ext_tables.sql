@@ -13,6 +13,7 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 	position varchar(255) DEFAULT '' NOT NULL,
 	typeof varchar(255) DEFAULT '' NOT NULL,
 	content_elements int(11) unsigned DEFAULT '0' NOT NULL,
+	media int(11) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

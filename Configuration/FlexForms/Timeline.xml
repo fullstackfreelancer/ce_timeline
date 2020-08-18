@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<T3DataStructure>
+  <ROOT type="array">
+    <type>array</type>
+    <el type="array">
+
+        <settings.entries>
+            <TCEforms>
+                <label>Add Entries</label>
+                <config>
+                    <type>inline</type>
+                    <foreign_table>tx_cetimeline_domain_model_entry</foreign_table>
+                    <foreign_field>pce</foreign_field>
+                    <foreign_sortby>sorting</foreign_sortby>
+                    <maxitems>50</maxitems>
+                    <foreign_types type="array">
+                        <numIndex index="1" type="array">
+                            <showitem>
+                                title, link, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, hidden;;1, starttime, endtime
+                            </showitem>
+                        </numIndex>
+                    </foreign_types>
+                </config>
+            </TCEforms>
+        </settings.entries>
+
+    </el>
+  </ROOT>
+</T3DataStructure>

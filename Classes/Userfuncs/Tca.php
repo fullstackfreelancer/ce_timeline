@@ -6,28 +6,11 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 
 class Tca{
 
-    /**
-     * Renders a custom, user-defined field.
-     *
-     * @param array $configuration
-     * @param UserElement $parentObject
-     * @return string HTML for the field
-     */
-    public function specialField($configuration, $parentObject)
-    {
-        $color = (isset($configuration['parameters']['color'])) ? $configuration['parameters']['color'] : 'red';
-        $size = (isset($configuration['parameters']['size'])) ? (int)$configuration['parameters']['size'] : 20;
-        $formField = '<div style="padding: 5px; background-color: ' . $color . ';">';
-        $formField .= '<input type="text" name="' . $configuration['itemFormElName'] . '"';
-        $formField .= ' value="' . htmlspecialchars($configuration['itemFormElValue']) . '"';
-        $formField .= ' size="' . $size . '"';
-        $formField .= ' onchange="' . htmlspecialchars(implode('', $configuration['fieldChangeFunc'])) . '"';
-        $formField .= $configuration['onFocus'];
-        $formField .= ' /></div>';
-        return $formField;
+    public function dynamicIcon(){
+        return 'typo3conf/ext/ce_timeline/Resources/Public/Icons/content-timeline.svg';
     }
 
-    public function haikuTitle(&$parameters){
+    public function recordTitle(&$parameters){
         $record = BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
         $newTitle = $record['title'];
         switch ($record['typeof']) {

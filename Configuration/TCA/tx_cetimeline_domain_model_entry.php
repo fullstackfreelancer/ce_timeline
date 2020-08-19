@@ -5,7 +5,7 @@ return [
         'label' => 'header',
         'label_alt' => 'typeof,position',
         'label_alt_force' => 1,
-        'label_userFunc' => \SIMONKOEHLER\CeTimeline\Userfuncs\Tca::class . '->haikuTitle',
+        'label_userFunc' => \SIMONKOEHLER\CeTimeline\Userfuncs\Tca::class . '->recordTitle',
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
@@ -17,16 +17,15 @@ return [
         'enablecolumns' => [
             'disabled' => 'hidden',
             'starttime' => 'starttime',
-            'endtime' => 'endtime',
+            'endtime' => 'endtime'
         ],
-        'searchFields' => 'header,description',
-        'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline.svg',
+        'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline-record.svg',
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, position, typeof, media',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, description_html, position, typeof, media',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, media, --palette--;;dimensions'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, media, --palette--;;dimensions'],
     ],
     'palettes' =>[
         'settings' =>[
@@ -102,8 +101,7 @@ return [
             'displayCond' => [
                 'AND' => [
                     'OR' => [
-                        'FIELD:typeof:=:2',
-                        'FIELD:typeof:=:3'
+                        'FIELD:typeof:=:2'
                     ]
                 ]
             ],
@@ -205,7 +203,7 @@ return [
                     ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textblock', 0],
                     ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.timeentry', 1],
                     ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textimage', 2],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.images', 3],
+                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.html', 3],
                 ],
             ]
         ],
@@ -272,8 +270,25 @@ return [
                 'type' => 'text',
                 'cols' => 40,
                 'rows' => 8,
+                'enableRichtext' => true,
             ],
-            'defaultExtras' => 'richtext[]',
+        ],
+        'description_html' => [
+            'displayCond' => [
+                'AND' => [
+                    'OR' => [
+                        'FIELD:typeof:=:3'
+                    ]
+                ]
+            ],
+            'exclude' => true,
+            'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.description_html',
+            'config' => [
+                'type' => 'text',
+                'renderType' => 't3editor',
+                'format' => 'html',
+                'rows' => 20,
+            ],
         ],
         'position' => [
             'displayCond' => [
@@ -301,8 +316,7 @@ return [
             'displayCond' => [
                 'AND' => [
                     'OR' => [
-                        'FIELD:typeof:=:2',
-                        'FIELD:typeof:=:3'
+                        'FIELD:typeof:=:2'
                     ]
                 ]
             ],

@@ -18,20 +18,6 @@ $tca = [
 
 $GLOBALS['TCA']['tt_content'] = array_replace_recursive($GLOBALS['TCA']['tt_content'], $tca);
 
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addTcaSelectItem(
-    'tt_content',
-    'CType',
-    ['Timeline', 'ce_timeline', 'ce_timeline']
-);
-
-/*
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addPiFlexFormValue(
-    '*',
-    'FILE:EXT:ce_timeline/Configuration/FlexForms/Timeline.xml',
-    'ce_timeline'
-);
-*/
-
 // plugin signature: <extension key without underscores> '_' <plugin name in lowercase>
 $pluginSignature = 'cetimeline_timeline';
 $GLOBALS['TCA']['tt_content']['types']['list']['subtypes_addlist'][$pluginSignature] = 'pi_flexform';

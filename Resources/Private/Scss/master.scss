@@ -244,10 +244,16 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 					.ce-timeline-gallery{
 						width: 100%;
 					}
+					.ce-timeline-text{
+						width: 100%;
+					}
 				}
 				// Image position BOTTOM
 				&.layout-1{
 					.ce-timeline-gallery{
+						width: 100%;
+					}
+					.ce-timeline-text{
 						width: 100%;
 					}
 				}

@@ -36,8 +36,41 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h6">
 				<target>H6</target>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.enable_lightbox">
+				<target>Vergrößern</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout">
+				<target>Galerieposition</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.top">
+				<target>Oben</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.bottom">
+				<target>Unten</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.left">
+				<target>Links</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.right">
+				<target>Rechts</target>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.description">
 				<target>Beschreibung</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.media">
+				<target>Bilder</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.image_width">
+				<target>Bildbreite</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.image_height">
+				<target>Bildhöhe</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.gallery_width">
+				<target>Breite der Galerie</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.images_per_row">
+				<target>Bilder pro Reihe</target>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.position">
 				<target>Position</target>
@@ -57,8 +90,11 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.timeentry">
 				<target>Zeiteintrag</target>
 			</trans-unit>
-			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.content">
-				<target>Inhaltselemente</target>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.textimage">
+				<target>Text mit Bild</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.images">
+				<target>Bilder</target>
 			</trans-unit>
 		</body>
 	</file>

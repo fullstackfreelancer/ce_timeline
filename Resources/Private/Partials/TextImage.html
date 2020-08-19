@@ -1,0 +1,21 @@
+<li class="text-image layout-{entry.textimage_layout} align-{entry.position} gallery-width-{entry.gallery_width}">
+
+    <f:switch expression="{entry.textimage_layout}">
+        <f:case value="0">
+            <f:render partial="TextImage/ImageTop" arguments="{_all}"/>
+        </f:case>
+        <f:case value="1">
+            <f:render partial="TextImage/ImageBottom" arguments="{_all}"/>
+        </f:case>
+        <f:case value="2">
+            <f:render partial="TextImage/ImageLeft" arguments="{_all}"/>
+        </f:case>
+        <f:case value="3">
+            <f:render partial="TextImage/ImageRight" arguments="{_all}"/>
+        </f:case>
+        <f:defaultCase>
+            <f:render partial="TextImage/ImageTop" arguments="{_all}"/>
+        </f:defaultCase>
+    </f:switch>
+
+</li>

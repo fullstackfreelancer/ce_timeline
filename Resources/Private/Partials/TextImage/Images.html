@@ -1,0 +1,30 @@
+<f:switch expression="{media -> f:count()}">
+    <f:case value="1">
+        <f:render section="Image" arguments="{image:media.0,width:entry.image_width,height:entry.image_height,lightbox:entry.enable_lightbox}"/>
+    </f:case>
+    <f:case value="0">
+        <div class="ce-timeline-info">NO IMAGE</div>
+    </f:case>
+    <f:defaultCase>
+        <div class="ce-timeline-gallery-row ce-timeline-columns-{entry.images_per_row}">
+        <f:for each="{media}" as="item">
+            <f:render section="Image" arguments="{image:item,width:entry.image_width,height:entry.image_height,lightbox:entry.enable_lightbox}"/>
+        </f:for>
+        </div>
+    </f:defaultCase>
+</f:switch>
+
+<f:section name="Image">
+    <div class="ce-timeline-image">
+        <f:if condition="{lightbox}">
+            <f:then>
+            <a href="{f:uri.image(image:image)}" data-fslightbox="image-{image.uid}">
+                <f:image image="{image}" class="img-fluid" width="{width}" height="{height}" alt="{image.alternative}"/>
+            </a>
+            </f:then>
+            <f:else>
+            <f:image image="{image}" class="img-fluid" width="{width}" height="{height}" alt="{image.alternative}"/>
+            </f:else>
+        </f:if>
+    </div>
+</f:section>

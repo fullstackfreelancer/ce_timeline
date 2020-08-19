@@ -14,6 +14,12 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 	typeof varchar(255) DEFAULT '' NOT NULL,
 	content_elements int(11) unsigned DEFAULT '0' NOT NULL,
 	media int(11) unsigned DEFAULT '0' NOT NULL,
+	textimage_layout varchar(255) DEFAULT '' NOT NULL,
+	image_width varchar(255) DEFAULT '' NOT NULL,
+	image_height varchar(255) DEFAULT '' NOT NULL,
+	gallery_width varchar(255) DEFAULT '' NOT NULL,
+	images_per_row tinyint(4) unsigned DEFAULT '0' NOT NULL,
+	enable_lightbox tinyint(4) unsigned DEFAULT '0' NOT NULL,
 
 	tstamp int(11) unsigned DEFAULT '0' NOT NULL,
 	crdate int(11) unsigned DEFAULT '0' NOT NULL,

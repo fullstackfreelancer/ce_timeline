@@ -23,3 +23,9 @@
    'Configuration/TypoScript/Styles/Pink',
    'Timeline Styles - Pink Borders'
 );
+
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
+   'ce_timeline',
+   'Configuration/TypoScript/Lightbox',
+   'Timeline - Lightbox Javascript'
+);

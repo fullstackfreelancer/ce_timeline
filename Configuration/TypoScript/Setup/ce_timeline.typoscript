@@ -16,8 +16,14 @@ tt_content {
                 where.dataWrap = pce = |
                 orderBy = tx_cetimeline_domain_model_entry.sorting
                 as = entries
+                dataProcessing {
+                    10 = TYPO3\CMS\Frontend\DataProcessing\FilesProcessor
+                    10 {
+                        references.fieldName = media
+                        as = media
+                    }
+                }
             }
-
         }
     }
 }

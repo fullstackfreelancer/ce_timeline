@@ -57,8 +57,11 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.timeentry">
 				<target>Tiempo</target>
 			</trans-unit>
-			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.contenido">
-				<target>Contenido</target>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.textimage">
+				<target>Texto con imagen</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.images">
+				<target>Solo imagenes</target>
 			</trans-unit>
 		</body>
 	</file>

@@ -1,5 +1,19 @@
 <INCLUDE_TYPOSCRIPT: source="DIR:EXT:ce_timeline/Configuration/TypoScript/Setup" extensions="typoscript">
 
+plugin.tx_cetimeline_timeline{
+    settings{
+
+    }
+    view {
+        templateRootPath = EXT:ce_timeline/Resources/Private/Templates/
+        partialRootPath = EXT:ce_timeline/Resources/Private/Partials/
+        layoutRootPath = EXT:ce_timeline/Resources/Private/Layouts/
+    }
+    persistence {
+        storagePid = {$plugin.tx_osp.settings.storage.posts}
+    }
+}
+
 lib.contentElement{
     templateRootPaths{
         1277 = EXT:ce_timeline/Resources/Private/Templates/

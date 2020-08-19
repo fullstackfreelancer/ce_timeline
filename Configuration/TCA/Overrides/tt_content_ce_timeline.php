@@ -31,7 +31,7 @@ call_user_func(function () {
   			'showitem' => 'timeline_entries, --palette--;;textfields','canNotCollapse' => 1
 	);
 
-	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ce_timeline'] = 'stickling-icon';
+	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ce_timeline'] = 'timeline-icon';
 	$GLOBALS['TCA']['tt_content']['types']['ce_timeline'] = [
 		'showitem' => '
                 --palette--;;main,

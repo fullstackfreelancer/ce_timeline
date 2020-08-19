@@ -17,7 +17,10 @@
                     <f:render partial="Time" arguments="{entry:entry.data}"/>
                 </f:case>
                 <f:case value="2">
-                    <f:render partial="Content" arguments="{entry:entry}"/>
+                    <f:render partial="TextImage" arguments="{entry:entry.data,media:entry.media}"/>
+                </f:case>
+                <f:case value="3">
+                    <f:render partial="Images" arguments="{entry:entry.data,media:entry.media}"/>
                 </f:case>
             </f:switch>
         </f:for>

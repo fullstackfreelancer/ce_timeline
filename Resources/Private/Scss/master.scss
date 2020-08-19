@@ -159,6 +159,113 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 
 			}
 
+			&.gallery-width-50{
+				.ce-timeline-text{
+					width: 50%;
+				}
+				.ce-timeline-gallery{
+					width: calc(50% - 10px);
+				}
+			}
+
+			&.gallery-width-33{
+				.ce-timeline-text{
+					width: 66%;
+				}
+				.ce-timeline-gallery{
+					width: calc(33% - 10px);
+				}
+			}
+
+			&.text-image{
+				// Default styles for gallery of all types
+				.ce-timeline-gallery{
+					display: block;
+					flex: none;
+					margin-bottom: 1rem;
+					.ce-timeline-gallery-row{
+						display: flex;
+						flex-wrap: wrap;
+						margin-top: -10px;
+  						margin-left: -10px;
+						.ce-timeline-image {
+							width: calc(50% - 10px);
+							margin-left: 10px;
+							margin-top: 10px;
+						}
+						&.ce-timeline-columns-1{
+							.ce-timeline-image {
+								width: 100%;
+							}
+						}
+						&.ce-timeline-columns-2{
+							.ce-timeline-image {
+								width: calc(50% - 10px);
+							}
+						}
+						&.ce-timeline-columns-3{
+							.ce-timeline-image {
+								width: calc(33.333% - 10px);
+							}
+						}
+						&.ce-timeline-columns-4{
+							.ce-timeline-image {
+								width: calc(25% - 10px);
+							}
+						}
+						&.ce-timeline-columns-5{
+							.ce-timeline-image {
+								width: calc(20% - 10px);
+							}
+						}
+						&.ce-timeline-columns-6{
+							.ce-timeline-image {
+								width: calc(16.6% - 10px);
+							}
+						}
+						&.ce-timeline-columns-7{
+							.ce-timeline-image {
+								width: calc(14.28% - 10px);
+							}
+						}
+						&.ce-timeline-columns-8{
+							.ce-timeline-image {
+								width: calc(12.5% - 10px);
+							}
+						}
+					}
+				}
+				// Image position TOP
+				&.layout-0{
+					.ce-timeline-gallery{
+						width: 100%;
+					}
+				}
+				// Image position BOTTOM
+				&.layout-1{
+					.ce-timeline-gallery{
+						width: 100%;
+					}
+				}
+				// Image position LEFT
+				&.layout-2{
+					display: flex;
+					.ce-timeline-gallery{
+						margin-right: 20px;
+						img{
+							max-width: 100%;
+						}
+					}
+				}
+				// Image position RIGHT
+				&.layout-3{
+					display: flex;
+					.ce-timeline-gallery{
+						margin-left: 20px;
+					}
+				}
+			}
+
 			p{
 				margin-bottom: 0;
 			}

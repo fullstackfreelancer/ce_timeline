@@ -1,0 +1,5 @@
+page{
+    includeJSFooter{
+        ce-timeline-lightbox = EXT:ce_timeline/Resources/Public/Javascript/fslightbox.js
+    }
+}

@@ -12,6 +12,9 @@
 			<trans-unit id="ce_description">
 				<source>Creates a timeline with any number of entries that can be sorted manually</source>
 			</trans-unit>
+			<trans-unit id="extconf.timelinePluginEnabled">
+				<source>Plugin enabled (experimental): Enables the Timeline Plugin in addition to the Content Element (experimental)</source>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

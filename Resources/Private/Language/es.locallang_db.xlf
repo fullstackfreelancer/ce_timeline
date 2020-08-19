@@ -39,6 +39,9 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.description">
 				<target>Descripción</target>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.description_html">
+				<target>HTML-Code</target>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.position">
 				<target>Posición</target>
 			</trans-unit>
@@ -60,8 +63,8 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.textimage">
 				<target>Texto con imagen</target>
 			</trans-unit>
-			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.images">
-				<target>Solo imagenes</target>
+			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.html">
+				<target>Codigo de HTML</target>
 			</trans-unit>
 		</body>
 	</file>

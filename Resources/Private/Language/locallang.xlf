@@ -7,7 +7,7 @@
 				<source>Entries</source>
 			</trans-unit>
 			<trans-unit id="ce_title">
-				<source>Timeline</source>
+				<source>Timeline Content Element</source>
 			</trans-unit>
 			<trans-unit id="ce_description">
 				<source>Creates a timeline with any number of entries that can be sorted manually</source>

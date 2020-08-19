@@ -2,10 +2,15 @@
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
-## Version 2.0.3 now with online DEMO
-This is a bugfix and compatibility release for TYPO3 version 10. New features are coming with the next version.
-I finally found the time to create a little DEMO of the extension here:
+## Online DEMO and Screenshots
+Here's a little DEMO of the extension in action:
 https://simon-koehler.com/en/products/ce-timeline
+
+## Upgrade from version 2.0.3 to version 3.0.0
+- Overwrite/install the extension
+- Go to Maintenance > Analyze Database Structure and add some new required fields
+- Add the static TypoScript for the lightbox to your template record if you want to use the lightbox
+- Clear all caches and have fun!
 
 ## Upgrade from version 2.0.2 to version 2.0.3
 - Overwrite/install the extension
@@ -16,19 +21,27 @@ https://simon-koehler.com/en/products/ce-timeline
 - Go to Maintenance > Analyze Database Structure and remove some tables that we don't need anymore
 - Clear all caches and have fun!
 
-## Features
+## Features in Version 3.0.0
+
+- Lightbox feature for images
+- Added entry type "Text & Images"
+- Added entry type "HTML Code"
+
+## More Features:
 
 - User friendly and very easy to handle
 - Includes predefined light, dark and pink stylesheets
 - 100% responsive
-- 2 different entry types (time and text)
+- 4 different entry types (time, text, textimage, html)
 - Entries can be ordered manually
 - Optional header and text (rte) above each timeline
-- Does not require any JavaScript
+- Does not require any JavaScript <sup>*</sup>
 - Does not require any other Extension
 - Translated in English, German and Spanish
 - Works seamlessly with bootstrap_package and other extensions
 - SASS files included (see: /Resources/Private/Scss/)
+
+<sup>*</sup> (the lightbox feature comes with its own, independent JavaScript!)
 
 ## Installation
 
@@ -41,6 +54,7 @@ You don't need to configure much to get this extension running.
 - add the static TypoScript (Timeline - Content Element) to your template record
 - choose a static TypoScript (e.g. Timeline Styles - Default) to make the timeline look nice
 - add a content element of type "Timeline" and add some entries
+- To use the lightbox-feature, you need to include the static TypoScript in your template record
 - have fun!
 
 ## Need custom CSS Styling or even SASS?
@@ -77,6 +91,10 @@ https://github.com/koehlersimon/ce_timeline/tree/master/Resources/Private/Partia
 ## Support & Service
 
 If you have any problems with the extension, please let me know! Since this is open source, I only guarantee 100% expert support when I get paid, but I also like to support the community. Please don't hesitate to open an issue here on GitHub or send a message: https://simon-koehler.com/en/contact
+
+## Help me to keep the System up-to-date!
+
+Many times if there is a special request, I just do it for free. I believe in the power of open source and free software. I also believe in you and your projects. If you like my work and you want to ensure further development, please don't hesitate to make a donation here: https://paypal.me/trypo3freelancer/50/
 
 ## Do you want to learn TYPO3? Here's what you need:
 Video Training TYPO3 9 LTS (German language)

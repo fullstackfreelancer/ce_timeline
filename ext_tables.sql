@@ -10,6 +10,7 @@ CREATE TABLE tx_cetimeline_domain_model_entry (
 	header varchar(255) DEFAULT '' NOT NULL,
 	header_layout varchar(25) DEFAULT '' NOT NULL,
 	description text DEFAULT '' NOT NULL,
+	description_html text DEFAULT '' NOT NULL,
 	position varchar(255) DEFAULT '' NOT NULL,
 	typeof varchar(255) DEFAULT '' NOT NULL,
 	content_elements int(11) unsigned DEFAULT '0' NOT NULL,

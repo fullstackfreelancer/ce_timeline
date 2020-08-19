@@ -139,6 +139,7 @@ return [
                     ['7', 7],
                     ['8', 8]
                 ],
+                'default' => '1'
             ],
         ],
         'gallery_width' => [
@@ -158,6 +159,7 @@ return [
                     ['33%', 33],
                     ['50%', 50]
                 ],
+                'default' => '50'
             ],
         ],
         'image_width' => [
@@ -288,6 +290,7 @@ return [
                 'renderType' => 't3editor',
                 'format' => 'html',
                 'rows' => 20,
+                'default' => ''
             ],
         ],
         'position' => [

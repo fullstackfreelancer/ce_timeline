@@ -192,6 +192,10 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 							width: calc(50% - 10px);
 							margin-left: 10px;
 							margin-top: 10px;
+							img{
+								max-width: 100%;
+								height: auto;
+							}
 						}
 						&.ce-timeline-columns-1{
 							.ce-timeline-image {

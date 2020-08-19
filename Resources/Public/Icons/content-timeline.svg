@@ -2,14 +2,17 @@
 <!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
 <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
 <svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-	 width="535.499px" height="535.499px" viewBox="0 0 535.499 535.499" enable-background="new 0 0 535.499 535.499"
-	 xml:space="preserve">
+	 width="380px" height="380px" viewBox="0 0 380 380" enable-background="new 0 0 380 380" xml:space="preserve">
 <g>
-	<path fill="#FFFFFF" d="M0,0h535.499v535.5H0V0L0,0z"/>
-	<path fill="#999999" d="M0,0v535.5h535.5V0H0z M38.25,38.25h459v459h-459V38.25L38.25,38.25z"/>
-	<path fill="#666666" d="M315.229,109.51h123.75v94.75h-123.75V109.51z"/>
-	<rect x="256.431" y="74.406" fill="#B9B9B9" width="20.637" height="396.375"/>
-	<path fill="#666666" d="M95.788,212h123.75v94.75H95.788V212L95.788,212z"/>
-	<path fill="#666666" d="M315.229,331.51h123.75v94.75h-123.75V331.51z"/>
+	<path fill="#FFFFFF" d="M24,24h332v332H24V24z"/>
+	<path fill="#999999" d="M24,24v332h332V24H24z M47.713,47.713h284.574v284.574H47.713V47.713z"/>
+	<g>
+		<path fill="#B9B9B9" d="M229.214,85.142h71.144v20h-71.144V85.142z M229.214,125.157h71.144v20h-71.144V125.157z M229.214,165.173
+			h71.144v20h-71.144V165.173z"/>
+		<path fill="#707070" d="M199.783,83.285v213.43H176.07V83.285H199.783z"/>
+		<path fill="#B9B9B9" d="M79.643,196.684h71.144v20H79.643V196.684z M79.643,236.699h71.144v20H79.643V236.699z M79.643,276.715
+			h71.144v20H79.643V276.715z"/>
+	</g>
+	<polyline fill="#1EABF9" points="356,246 356,356 227.667,356 	"/>
 </g>
 </svg>

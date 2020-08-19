@@ -30,7 +30,6 @@ class EntryController extends \TYPO3\CMS\Extbase\Mvc\Controller\ActionController
             $currentUid = $this->configurationManager->getContentObject()->data['uid'];
             $this->view->assign('entries',$this->entryRepository->findAll());
             $this->view->assign('settings',$this->settings);
-            print_r($this->settings);
 
         }
 

@@ -1,4 +1,4 @@
-# Timeline Content Element for TYPO3 (ce_timeline)
+# `3.0.0` Timeline Content Element for TYPO3 (ce_timeline)
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 

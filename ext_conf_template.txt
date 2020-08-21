@@ -1,5 +1,0 @@
-# Settings
-###########################
-
-# cat=timeline; type=boolean; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:extconf.timelinePluginEnabled
-pluginEnabled = 0

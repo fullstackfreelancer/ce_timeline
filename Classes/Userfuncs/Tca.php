@@ -6,10 +6,6 @@ use TYPO3\CMS\Backend\Utility\BackendUtility;
 
 class Tca{
 
-    public function dynamicIcon(){
-        return 'typo3conf/ext/ce_timeline/Resources/Public/Icons/content-timeline.svg';
-    }
-
     public function recordTitle(&$parameters){
         $record = BackendUtility::getRecord($parameters['table'], $parameters['row']['uid']);
         $newTitle = $record['title'];

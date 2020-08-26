@@ -1,10 +1,22 @@
-plugin.tx_ce_timeline{
-    settings{
+# customsubcategory=634=LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:customsubcategory_634
 
-    }
-    view{
-        layoutRootPath = EXT:ce_timeline/Resources/Private/Layouts/
-        partialRootPath = EXT:ce_timeline/Resources/Private/Partials/
-        templateRootPath = EXT:ce_timeline/Resources/Private/Templates/
+ce_timeline{
+    gallery{
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.image_width
+        image_width = 300c
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.image_height
+        image_height = 200c
+        # cat=Timeline CE/634/a; type=options[top=0,bottom=1,left=2,right=3]; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout
+        textimage_layout = 2
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.images_per_row
+        images_per_row = 1
+        # cat=Timeline CE/634/a; type=options[33,50]; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.gallery_width
+        gallery_width = 33
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.enable_lightbox
+        enable_lightbox = 1
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.lightbox_width
+        lightbox_width = 600c
+        # cat=Timeline CE/634/a; type=string; label=LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.lightbox_height
+        lightbox_height = 400c
     }
 }

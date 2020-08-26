@@ -38,4 +38,18 @@ lib.contentElement{
     layoutRootPaths{
         1277 = EXT:ce_timeline/Resources/Private/Layouts/
     }
+    settings{
+        ce_timeline{
+            gallery{
+                enable_lightbox = {$ce_timeline.gallery.enable_lightbox}
+                image_width = {$ce_timeline.gallery.image_width}
+                image_height = {$ce_timeline.gallery.image_height}
+                lightbox_width = {$ce_timeline.gallery.lightbox_width}
+                lightbox_height = {$ce_timeline.gallery.lightbox_height}
+                textimage_layout = {$ce_timeline.gallery.textimage_layout}
+                images_per_row = {$ce_timeline.gallery.images_per_row}
+                gallery_width = {$ce_timeline.gallery.gallery_width}
+            }
+        }
+    }
 }

@@ -1,7 +1,7 @@
 {
     "name": "simonkoehler/ce-timeline",
     "type": "typo3-cms-extension",
-    "version": "3.0.1",
+    "version": "3.2.0",
     "description": "Enables a new content element of type Timeline",
     "homepage": "https://simon-koehler.com/en/products/ce-timeline",
     "authors": [
@@ -32,7 +32,9 @@
         "timeline",
         "frontend",
         "plugin",
-        "css"
+        "css",
+        "addon",
+        "zeitleiste"
     ],
     "replace": {
         "simonkoehler/ce-timeline": "self.version",

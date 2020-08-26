@@ -12,6 +12,10 @@
 			<trans-unit id="ce_description">
 				<target>Crea una línea de tiempo histórica con cualquier cantidad de entradas que se pueden ordenar manualmente</target>
 			</trans-unit>
+
+			<trans-unit id="customsubcategory_634">
+				<target>Configuración de la galería</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

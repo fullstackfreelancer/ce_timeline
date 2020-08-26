@@ -15,6 +15,11 @@
 			<trans-unit id="extconf.timelinePluginEnabled">
 				<source>Plugin enabled (experimental): Enables the Timeline Plugin in addition to the Content Element (experimental)</source>
 			</trans-unit>
+
+			<trans-unit id="customsubcategory_634">
+				<source>Gallery Settings</source>
+			</trans-unit>
+
 		</body>
 	</file>
 </xliff>

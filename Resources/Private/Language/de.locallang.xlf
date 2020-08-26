@@ -12,6 +12,10 @@
 			<trans-unit id="ce_description">
 				<target>Eine Zeitleiste mit beliebig vielen Einträgen, die manuell sortiert werden können.</target>
 			</trans-unit>
+
+			<trans-unit id="customsubcategory_634">
+				<target>Galerie-Einstellungen</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

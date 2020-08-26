@@ -69,6 +69,12 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.image_height">
 				<source>Image Height</source>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.lightbox_width">
+				<source>Lightbox Width</source>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.lightbox_height">
+				<source>Lightbox Height</source>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.gallery_width">
 				<source>Gallery Width</source>
 			</trans-unit>

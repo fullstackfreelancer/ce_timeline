@@ -36,11 +36,50 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.header_layout.h6">
 				<target>H6</target>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.enable_lightbox">
+				<target>Agrandar</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout">
+				<target>Posición de la galería</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.top">
+				<target>Encima</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.bottom">
+				<target>Abajo</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.left">
+				<target>Izquierda</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.textimage_layout.right">
+				<target>Derecha</target>
+			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.description">
 				<target>Descripción</target>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.description_html">
-				<target>HTML-Code</target>
+				<target>Código HTML</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.media">
+				<target>Imagenes</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.image_width">
+				<target>Ancho de la imagen</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.image_height">
+				<target>Altura de imagen</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.lightbox_width">
+				<target>Ancho de la imagen del lightbox</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.lightbox_height">
+				<target>Altura de la imagen del lightbox</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.gallery_width">
+				<target>Ancho de la galería</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.images_per_row">
+				<target>Imágenes por línea</target>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.position">
 				<target>Posición</target>

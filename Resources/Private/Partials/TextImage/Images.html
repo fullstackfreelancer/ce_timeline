@@ -1,9 +1,54 @@
+<f:if condition="{entry.enable_lightbox}">
+    <f:then>
+        <f:variable name="enable_lightbox" value="{entry.enable_lightbox}"/>
+    </f:then>
+    <f:else>
+        <f:variable name="enable_lightbox" value="{settings.ce_timeline.gallery.enable_lightbox}"/>
+    </f:else>
+</f:if>
+
+<f:if condition="{entry.image_width}">
+    <f:then>
+        <f:variable name="image_width" value="{entry.image_width}"/>
+    </f:then>
+    <f:else>
+        <f:variable name="image_width" value="{settings.ce_timeline.gallery.image_width}"/>
+    </f:else>
+</f:if>
+
+<f:if condition="{entry.image_height}">
+    <f:then>
+        <f:variable name="image_height" value="{entry.image_height}"/>
+    </f:then>
+    <f:else>
+        <f:variable name="image_height" value="{settings.ce_timeline.gallery.image_height}"/>
+    </f:else>
+</f:if>
+
+<f:if condition="{entry.lightbox_width}">
+    <f:then>
+        <f:variable name="lightbox_width" value="{entry.lightbox_width}"/>
+    </f:then>
+    <f:else>
+        <f:variable name="lightbox_width" value="{settings.ce_timeline.gallery.lightbox_width}"/>
+    </f:else>
+</f:if>
+
+<f:if condition="{entry.lightbox_height}">
+    <f:then>
+        <f:variable name="lightbox_height" value="{entry.lightbox_height}"/>
+    </f:then>
+    <f:else>
+        <f:variable name="lightbox_height" value="{settings.ce_timeline.gallery.lightbox_height}"/>
+    </f:else>
+</f:if>
+
 <f:switch expression="{media -> f:count()}">
     <f:case value="1">
-        <f:render section="Image" arguments="{image:media.0,width:entry.image_width,height:entry.image_height,lightbox:entry.enable_lightbox}"/>
+        <f:render section="Image" arguments="{image:media.0, width:image_width, height:image_height, lightbox:enable_lightbox, lightbox_width:lightbox_width, lightbox_height:lightbox_height}"/>
     </f:case>
     <f:case value="0">
-        
+
     </f:case>
     <f:defaultCase>
         <div class="ce-timeline-gallery-row ce-timeline-columns-{entry.images_per_row}">
@@ -18,7 +63,7 @@
     <div class="ce-timeline-image">
         <f:if condition="{lightbox}">
             <f:then>
-            <a href="{f:uri.image(image:image)}" data-fslightbox="image-{image.uid}">
+            <a href="{f:uri.image(image:image,width:lightbox_width,height:lightbox_height)}" data-fslightbox="image-{image.uid}">
                 <f:image image="{image}" class="img-fluid" width="{width}" height="{height}" alt="{image.alternative}"/>
             </a>
             </f:then>

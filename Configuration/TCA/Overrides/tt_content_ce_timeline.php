@@ -66,6 +66,8 @@ call_user_func(function () {
                 'appearance' => [
                     'collapseAll' => 1,
                     'expandSingle' => 1,
+					'useSortable' => true,
+					'levelLinksPosition' => 'bottom',
                 ],
 			],
 	    ],

@@ -25,7 +25,7 @@ return [
         'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, description_html, position, typeof, media',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, media, --palette--;;dimensions'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, --div--;Galerie, --palette--;;dimensions,--palette--;;lightbox'],
     ],
     'palettes' =>[
         'settings' =>[
@@ -35,7 +35,10 @@ return [
             'showitem' => 'header,header_layout',
         ],
         'dimensions' =>[
-            'showitem' => 'enable_lightbox,textimage_layout,image_width, image_height, images_per_row, gallery_width',
+            'showitem' => 'media, --linebreak--,textimage_layout,image_width, image_height,images_per_row, gallery_width',
+        ],
+        'lightbox' =>[
+            'showitem' => 'enable_lightbox,lightbox_width,lightbox_height',
         ],
     ],
     'columns' => [
@@ -194,6 +197,38 @@ return [
                 'eval' => 'trim'
             ],
         ],
+        'lightbox_width' => [
+            'displayCond' => [
+                'AND' => [
+                    'OR' => [
+                        'FIELD:typeof:=:2'
+                    ]
+                ]
+            ],
+            'exclude' => true,
+            'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.lightbox_width',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'trim'
+            ],
+        ],
+        'lightbox_height' => [
+            'displayCond' => [
+                'AND' => [
+                    'OR' => [
+                        'FIELD:typeof:=:2'
+                    ]
+                ]
+            ],
+            'exclude' => true,
+            'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.lightbox_height',
+            'config' => [
+                'type' => 'input',
+                'size' => 5,
+                'eval' => 'trim'
+            ],
+        ],
         'typeof' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof',
@@ -273,6 +308,7 @@ return [
                 'cols' => 40,
                 'rows' => 8,
                 'enableRichtext' => true,
+                'default' => ''
             ],
         ],
         'description_html' => [

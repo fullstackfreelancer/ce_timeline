@@ -59,6 +59,7 @@ Install the extension by downloading it in the extension manager or on https://e
 You don't need to configure much to get this extension running.
 
 - add the static TypoScript (Timeline - Content Element) to your template record
+- add the static Page Configuration (Timeline Content Element) to your root page if you want a "New Content Element Wizard"
 - choose a static TypoScript (e.g. Timeline Styles - Default) to make the timeline look nice
 - add a content element of type "Timeline" and add some entries
 - To use the lightbox-feature, you need to include the static TypoScript in your template record

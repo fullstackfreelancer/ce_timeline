@@ -1,7 +1,7 @@
 tt_content {
     ce_timeline =< lib.contentElement
     ce_timeline {
-        templateName = Timeline
+        templateName = {$ce_timeline.layout.templateName}
         extbase.controllerExtensionName = ce_timeline
         dataProcessing {
             // Request all timeline entries that are related to the content element record

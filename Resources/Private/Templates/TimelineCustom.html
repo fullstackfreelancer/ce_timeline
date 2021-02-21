@@ -1,8 +1,8 @@
-<f:layout name="Default"/>
+<f:layout name="Timeline"/>
 
 <f:section name="Main">
 
-    <div class="ce-timeline">
+    <f:render partial="Header/Header" arguments="{header:data.header,layout:data.header_layout,positionClass:data.header_position}"/>
     <f:if condition="{data.bodytext}">
         <f:format.html>{data.bodytext}</f:format.html>
     </f:if>
@@ -25,6 +25,5 @@
             </f:switch>
         </f:for>
     </ul>
-    </div>
 
 </f:section>

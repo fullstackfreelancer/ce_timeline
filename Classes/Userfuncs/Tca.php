@@ -25,6 +25,9 @@ class Tca{
             case '3':
                 $newTitle .= 'Type '.$record['typeof'].': '.substr(strip_tags($record['header']), 0, 80).' ' .$record['description'];
                 break;
+
+            default:
+                $newTitle .= 'Type '.$record['typeof'].': '.substr(strip_tags($record['header']), 0, 80).' '.$record['description'];
         }
         $parameters['title'] = $newTitle;
     }

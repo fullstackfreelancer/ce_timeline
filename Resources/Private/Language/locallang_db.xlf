@@ -58,7 +58,7 @@
 				<source>Description</source>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.description_html">
-				<source>HTML-Code</source>
+				<source>HTML Code</source>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.media">
 				<source>Media</source>
@@ -103,7 +103,7 @@
 				<source>Text &amp; Image</source>
 			</trans-unit>
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.html">
-				<source>HTML-Code</source>
+				<source>HTML Code</source>
 			</trans-unit>
 		</body>
 	</file>

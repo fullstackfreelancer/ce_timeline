@@ -1,5 +1,5 @@
 <?php
-$EM_CONF[$_EXTKEY] = array (
+$EM_CONF['ce_timeline'] = array (
     'title' => 'Timeline Content Element',
     'description' => 'Enables a new content element of type "Timeline" for displaying histories of companies and more...',
     'category' => 'fe',
@@ -9,7 +9,7 @@ $EM_CONF[$_EXTKEY] = array (
     'state' => 'stable',
     'uploadfolder' => '0',
     'clearCacheOnLoad' => 0,
-    'version' => '3.2.0',
+    'version' => '3.2.1',
     'constraints' =>
     array (
         'depends' => array (

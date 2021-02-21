@@ -22,10 +22,10 @@ return [
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline-record.svg',
     ],
     'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, description_html, position, typeof, media',
+        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, description_html, position, typeof, media, starttime, endtime',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, --div--;Galerie, --palette--;;dimensions,--palette--;;lightbox, --div--;LLL:EXT:cms/locallang_ttc.xlf:tabs.access, starttime, endtime'],
+        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, --div--;Galerie, --palette--;;dimensions,--palette--;;lightbox, --div--;Access, starttime, endtime'],
     ],
     'palettes' =>[
         'settings' =>[

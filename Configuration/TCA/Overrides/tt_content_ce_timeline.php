@@ -21,11 +21,6 @@ call_user_func(function () {
 			'showitem' => 'header, header_layout, header_position, --linebreak--, bodytext','canNotCollapse' => 1
 	);
 
-	// New palette spacing
-	$GLOBALS['TCA']['tt_content']['palettes']['spacing'] = array(
-			'showitem' => 'space_before_class, space_after_class','canNotCollapse' => 1
-	);
-
 	// New palette main
 	$GLOBALS['TCA']['tt_content']['palettes']['main'] = array(
   			'showitem' => 'timeline_entries, --palette--;;textfields','canNotCollapse' => 1
@@ -36,8 +31,9 @@ call_user_func(function () {
 		'showitem' => '
                 --palette--;;main,
 				--palette--;;textfields,
-				--palette--;;spacing,
 				--palette--;' . $frontendLanguageFilePrefix . 'palette.general;general,
+				--div--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:tabs.appearance,
+				--palette--;LLL:EXT:frontend/Resources/Private/Language/locallang_ttc.xlf:palette.frames;frames,
             	--div--;LLL:EXT:core/Resources/Private/Language/Form/locallang_tabs.xlf:language,
                 --palette--;;language,
             	--div--;' . $frontendLanguageFilePrefix . 'tabs.access,

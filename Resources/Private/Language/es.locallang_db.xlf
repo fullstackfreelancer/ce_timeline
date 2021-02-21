@@ -105,6 +105,12 @@
 			<trans-unit id="tx_cetimeline_domain_model_entry.typeof.html">
 				<target>Codigo de HTML</target>
 			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.starttime">
+				<target>Inicio</target>
+			</trans-unit>
+			<trans-unit id="tx_cetimeline_domain_model_entry.endtime">
+				<target>Fin</target>
+			</trans-unit>
 		</body>
 	</file>
 </xliff>

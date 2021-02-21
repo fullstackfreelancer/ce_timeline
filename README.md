@@ -1,4 +1,4 @@
-# `3.2.0` Timeline Content Element for TYPO3 (ce_timeline)
+# `3.2.1` Timeline Content Element for TYPO3 (ce_timeline)
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
@@ -6,12 +6,12 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 Here's a little DEMO of the extension in action:
 https://simon-koehler.com/en/products/ce-timeline
 
-## NEW in Version 3.2.0
-- BACKEND: Added TypoScript Constants to define global gallery image dimensions and more
-- BACKEND: Added drag and drop sorting for timeline elements in the backend
-- BACKEND: Added new gallery palette to timeline entries for better usability
-- BACKEND: Changed position of button to create new timeline entries
-- BACKEND: Added new translations, fixed Spanish translation errors
+## NEW in Version 3.2.1
+- Alternative "layout switch" added, more details here: https://github.com/koehlersimon/ce_timeline/blob/master/CHANGELOG.md#321---2021-02-21
+- Code cleanups and bugfixes
+
+## Upgrade from version 3.2.0 to version 3.2.1
+No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Upgrade from version 2.0.3 to version 3.0.0
 - Overwrite/install the extension

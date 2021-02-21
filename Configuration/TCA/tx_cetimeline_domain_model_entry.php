@@ -91,6 +91,31 @@ return [
                 ],
             ],
         ],
+        'starttime' => [
+            'exclude' => true,
+            'l10n_mode' => 'mergeIfNotBlank',
+            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.starttime',
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'eval' => 'datetime',
+                'default' => 0,
+            ]
+        ],
+        'endtime' => [
+            'exclude' => true,
+            'l10n_mode' => 'mergeIfNotBlank',
+            'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.endtime',
+            'config' => [
+                'type' => 'input',
+                'size' => 13,
+                'eval' => 'datetime',
+                'default' => 0,
+                'range' => [
+                    'upper' => mktime(0, 0, 0, 1, 1, 2038)
+                ]
+            ],
+        ],
         'header' => [
             'exclude' => true,
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header',

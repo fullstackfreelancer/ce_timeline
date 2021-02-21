@@ -59,6 +59,7 @@ Install the extension by downloading it in the extension manager or on https://e
 You don't need to configure much to get this extension running.
 
 - add the static TypoScript (Timeline - Content Element) to your template record
+- add the static Page Configuration (Timeline Content Element) to your root page if you want a "New Content Element Wizard"
 - choose a static TypoScript (e.g. Timeline Styles - Default) to make the timeline look nice
 - add a content element of type "Timeline" and add some entries
 - To use the lightbox-feature, you need to include the static TypoScript in your template record
@@ -101,7 +102,7 @@ If you have any problems with the extension, please let me know! Since this is o
 
 ## Help me to keep the System up-to-date!
 
-Many times if there is a special request, I just do it for free. I believe in the power of open source and free software. I also believe in you and your projects. If you like my work and you want to ensure further development, please don't hesitate to make a donation here: https://paypal.me/trypo3freelancer/50/
+Many times if there is a special request, I just do it for free. I believe in the power of open source and free software. I also believe in you and your projects. If you like my work and you want to ensure further development, please don't hesitate to make a donation here: https://paypal.me/typo3freelancer
 
 ## Do you want to learn TYPO3? Here's what you need:
 Video Training TYPO3 9 LTS (German language)

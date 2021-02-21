@@ -20,7 +20,7 @@ ce_timeline{
         lightbox_height = 400c
     }
     layout{
-        # cat=Timeline CE/634/a; type=options[DEFAULT: Renders the default Layout of your website (for instance bootstrap_package)=Timeline,CUSTOM: Renders the ce_timeline layout without custom theme frames.=TimelineCustom]; label=Template
+        # cat=Timeline CE/634/a; type=options[DEFAULT (new from v3.2.1): Renders the default Layout of your website (for instance bootstrap_package)=Timeline,CUSTOM: Renders the ce_timeline layout without custom theme frames.=TimelineCustom]; label=Template
         templateName = TimelineCustom
     }
 }

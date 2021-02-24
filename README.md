@@ -10,7 +10,7 @@ https://simon-koehler.com/en/products/ce-timeline
 - Alternative "layout switch" added, more details here: https://github.com/koehlersimon/ce_timeline/blob/master/CHANGELOG.md#321---2021-02-21
 - Code cleanups and bugfixes
 
-## Upgrade from version 3.2.0 to version 3.2.1 or 3.3.0
+## Upgrade from version 3.2.0 to version 3.2.1
 No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Upgrade from version 2.0.3 to version 3.0.0

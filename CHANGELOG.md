@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [3.3.0] - 2021-02-24
+
+### Added
+- Compatibility with TYPO3 11.1 tested
+
 ## [3.2.1] - 2021-02-21
 
 ### Added

@@ -1,40 +1,29 @@
-# `3.2.1` Timeline Content Element for TYPO3 (ce_timeline)
+# ![](https://github.com/koehlersimon/ce_timeline/blob/master/ext_icon.png?raw=true) ce_timeline - TYPO3 Extension
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
-## Online DEMO and Screenshots
-Here's a little DEMO of the extension in action:
-https://simon-koehler.com/en/products/ce-timeline
+<table border="0">
+    <tr>
+        <th>Latest version</b></th>
+        <td>3.2.1</td>
+    </tr>
+    <tr>
+        <th>Status</b></th>
+        <td><strong>stable</strong></td>
+    </tr>
+    <tr>
+        <th>TYPO3 version</b></th>
+        <td>9.5.0 - 10.4.99</td>
+    </tr>
+    <tr>
+        <th>TER</b></th>
+        <td><a href="https://extensions.typo3.org/extension/ce_timeline/">Download</a></td>
+    </tr>
+</table>
 
-## NEW in Version 3.2.1
-- Alternative "layout switch" added, more details here: https://github.com/koehlersimon/ce_timeline/blob/master/CHANGELOG.md#321---2021-02-21
-- Code cleanups and bugfixes
+<hr>
 
-## Upgrade from version 3.2.0 to version 3.2.1
-No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
-
-## Upgrade from version 2.0.3 to version 3.0.0
-- Overwrite/install the extension
-- Go to Maintenance > Analyze Database Structure and add some new required fields
-- Add the static TypoScript for the lightbox to your template record if you want to use the lightbox
-- Clear all caches and have fun!
-
-## Upgrade from version 2.0.2 to version 2.0.3
-- Overwrite/install the extension
-- Clear all caches and have fun!
-
-## Upgrade from version 1.0.0 to version 2.0.xx
-- Overwrite/install the extension
-- Go to Maintenance > Analyze Database Structure and remove some tables that we don't need anymore
-- Clear all caches and have fun!
-
-## Features in Version 3.0.0
-
-- Lightbox feature for images
-- Added entry type "Text & Images"
-- Added entry type "HTML Code"
-
-## More Features:
+## Features
 
 - User friendly and very easy to handle
 - Includes predefined light, dark and pink stylesheets
@@ -49,6 +38,19 @@ No special things to keep in mind, just install and overwrite the extension. If 
 - SASS files included (see: /Resources/Private/Scss/)
 
 <sup>*</sup> (the lightbox feature comes with its own, independent JavaScript!)
+
+## Online DEMO and Screenshots
+Here's a little DEMO of the extension in action:
+https://simon-koehler.com/en/products/ce-timeline
+
+<img width="600" src="https://simon-koehler.com/fileadmin/_processed_/2/2/csm_ce-timeline-preview_4b69c7cdba.jpg" alt="Screenshot TYPO3 Frontend">
+
+## NEW in Version 3.2.1
+- Alternative "layout switch" added, more details here: https://github.com/koehlersimon/ce_timeline/blob/master/CHANGELOG.md#321---2021-02-21
+- Code cleanups and bugfixes
+
+## Upgrade from version 3.2.0 to version 3.2.1
+No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Installation
 

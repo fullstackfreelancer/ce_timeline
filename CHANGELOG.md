@@ -1,7 +1,7 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-## [3.4.0] - 2021-02-24
+## [3.3.1] - 2021-02-24
 
 ### Fixed
 - Remove Class Tca.php and change TCA label output back to "normal" to prevent Ajax errors in the backend when creating timeline inline records

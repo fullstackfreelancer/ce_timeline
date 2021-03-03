@@ -6,6 +6,8 @@ All notable changes to this project will be documented in this file.
 ### Fixed
 - Remove Class Tca.php and change TCA label output back to "normal" to prevent Ajax errors in the backend when creating timeline inline records
 
+### Added
+- Styles for image class "img-fluid" added to make images responsive
 
 ## [3.3.0] - 2021-02-24
 

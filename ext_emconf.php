@@ -1,7 +1,7 @@
 <?php
 $EM_CONF['ce_timeline'] = array (
     'title' => 'Timeline Content Element',
-    'description' => 'Enables a new content element of type "Timeline" for displaying histories of companies and more...',
+    'description' => 'Add a new content element of type "Timeline" for displaying histories of companies and more...',
     'category' => 'fe',
     'author' => 'Simon Köhler',
     'author_email' => 'info@simon-koehler.com',
@@ -9,11 +9,11 @@ $EM_CONF['ce_timeline'] = array (
     'state' => 'stable',
     'uploadfolder' => '0',
     'clearCacheOnLoad' => 0,
-    'version' => '3.3.1',
+    'version' => '3.3.2',
     'constraints' =>
     array (
         'depends' => array (
-            'typo3' => '9.5.0-11.1.99'
+            'typo3' => '9.5.0-11.3.99'
         ),
         'conflicts' => array (
 

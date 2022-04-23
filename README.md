@@ -5,7 +5,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 <table border="0">
     <tr>
         <th>Latest version</b></th>
-        <td>3.3.2</td>
+        <td>3.3.3</td>
     </tr>
     <tr>
         <th>Status</b></th>
@@ -13,7 +13,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
     </tr>
     <tr>
         <th>TYPO3 version</b></th>
-        <td>9.5.0 - 11.3.3</td>
+        <td>9.5.0 - 11.5.8</td>
     </tr>
     <tr>
         <th>TER</b></th>
@@ -45,19 +45,13 @@ https://simon-koehler.com/en/products/ce-timeline
 
 <img width="600" src="https://simon-koehler.com/fileadmin/_processed_/2/2/csm_ce-timeline-preview_4b69c7cdba.jpg" alt="Screenshot TYPO3 Frontend">
 
-## NEW in Version 3.2.1
-- Alternative "layout switch" added, more details here: https://github.com/koehlersimon/ce_timeline/blob/master/CHANGELOG.md#321---2021-02-21
-- Code cleanups and bugfixes
-
-## Upgrade from version 3.2.0 to version 3.2.1
+## Upgrade from version 3.3.2 to version 3.3.3
 No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Installation
-
 Install the extension by downloading it in the extension manager or on https://extensions.typo3.org/extension/ce_timeline/.
 
 ## Basic configuration
-
 You don't need to configure much to get this extension running.
 
 - add the static TypoScript (Timeline - Content Element) to your template record

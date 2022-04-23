@@ -1,7 +1,7 @@
 {
     "name": "simonkoehler/ce-timeline",
     "type": "typo3-cms-extension",
-    "version": "3.3.2",
+    "version": "3.3.3",
     "description": "Enables a new content element of type Timeline",
     "homepage": "https://simon-koehler.com/en/products/ce-timeline",
     "authors": [
@@ -24,7 +24,7 @@
     },
     "license": "GPL-3.0-or-later",
     "require": {
-        "typo3/cms-core": "^9.5.23 || ^10.4.12 || ^11.3.3"
+        "typo3/cms-core": "^9.5.23 || ^10.4.12 || ^11.5.8"
     },
     "keywords": [
         "TYPO3",

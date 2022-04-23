@@ -15,19 +15,19 @@
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
    'ce_timeline',
    'Configuration/TypoScript/Styles/Darkmode',
-   'Timeline - Style: Darkmode'
+   'Timeline - Style: Dark Mode'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
    'ce_timeline',
    'Configuration/TypoScript/Styles/Lightmode',
-   'Timeline - Style: Lightmode'
+   'Timeline - Style: Light Mode'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(
    'ce_timeline',
    'Configuration/TypoScript/Styles/Pink',
-   'Timeline - Style: Pink Borders'
+   'Timeline - Style: Pink Mode'
 );
 
 \TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(

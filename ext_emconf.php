@@ -9,11 +9,11 @@ $EM_CONF['ce_timeline'] = array (
     'state' => 'stable',
     'uploadfolder' => '0',
     'clearCacheOnLoad' => 0,
-    'version' => '3.3.3',
+    'version' => '4.0.0',
     'constraints' =>
     array (
         'depends' => array (
-            'typo3' => '9.5.0-11.5.99'
+            'typo3' => '11.8.99-12.4.7'
         ),
         'conflicts' => array (
 

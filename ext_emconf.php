@@ -9,7 +9,7 @@ $EM_CONF['ce_timeline'] = array (
     'state' => 'stable',
     'uploadfolder' => '0',
     'clearCacheOnLoad' => 0,
-    'version' => '4.0.1',
+    'version' => '4.0.2',
     'constraints' =>
     array (
         'depends' => array (

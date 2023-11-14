@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.2] - 2023-11-14
+### Added
+- Changed composer vendor name from "simonkoehler" to "fullstackfreelancer"
+
 ## [4.0.1] - 2023-11-14
 ### Added
 - Header field of timeline records is not mandatory anymore

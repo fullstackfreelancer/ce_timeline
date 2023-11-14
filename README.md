@@ -5,7 +5,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 <table border="0">
     <tr>
         <th>Latest version</th>
-        <td>4.0.1</td>
+        <td>4.0.2</td>
     </tr>
     <tr>
         <th>Status</th>

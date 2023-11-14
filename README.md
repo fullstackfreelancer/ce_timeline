@@ -1,41 +1,16 @@
-# ![](https://github.com/koehlersimon/ce_timeline/blob/master/ext_icon.png?raw=true) ce_timeline - TYPO3 Extension
+# ![](https://github.com/fullstackfreelancer/ce_timeline/blob/master/ext_icon.png?raw=true) Timeline Content Element for TYPO3 CMS (ce_timeline)
 
 This extension provides a new content element of type "Timeline" (ce_timeline) that contains inline records of different timeline entries. Please note that this is not a plugin and there are no records visible in any list view by default. Feel free to use the code or the extension as a basis for your own stuff.
 
-<table border="0">
-    <tr>
-        <th>Latest version</th>
-        <td>4.0.2</td>
-    </tr>
-    <tr>
-        <th>Status</th>
-        <td><strong>stable</strong></td>
-    </tr>
-    <tr>
-        <th>TYPO3 version</th>
-        <td>11.8 - 12.4.7</td>
-    </tr>
-    <tr>
-        <th>TER</th>
-        <td><a href="https://extensions.typo3.org/extension/ce_timeline/">Download</a></td>
-    </tr>
-</table>
-
 <hr>
 
-## Features
+## Key Features
+- **User-Friendly:** Simple setup and handling.
+- **Responsive & Versatile:** Works well on all devices, offering four types of entries (time, text, image, HTML).
+- **Customizable:** Comes with light, dark, and pink stylesheets, and supports custom CSS/SASS.
+- **Multilingual Support:** Available in English, German, and Spanish.
+- **Compatible:** Integrates smoothly with bootstrap_package and similar extensions.
 
-- User friendly and easy to handle
-- Includes predefined light, dark and pink stylesheets
-- 100% responsive
-- 4 different entry types (time, text, text & image, html)
-- Entries can be ordered manually
-- Optional header and text (rte) above each timeline
-- Does not require any JavaScript <sup>*</sup>
-- Does not require any other Extension
-- Translated in English, German and Spanish
-- Works seamlessly with bootstrap_package and other extensions
-- SASS files included (see: /Resources/Private/Scss/)
 
 <sup>*</sup> (the lightbox feature comes with its own, independent JavaScript!)
 

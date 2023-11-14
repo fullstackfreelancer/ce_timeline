@@ -20,7 +20,8 @@
     ],
     "support": {
         "email": "info@simonkoehler.com",
-        "docs": "https://simonkoehler.com/contact"
+        "docs": "https://simonkoehler.com/contact",
+        "issues": "https://github.com/fullstackfreelancer/ce_timeline/issues"
     },
     "license": "GPL-3.0-or-later",
     "require": {
@@ -39,10 +40,6 @@
         "chronologisch",
         "chronologic"
     ],
-    "replace": {
-        "fullstackfreelancer/ce-timeline": "self.version",
-        "typo3-ter/ce-timeline": "self.version"
-    },
     "extra": {
         "typo3/cms": {
             "extension-key": "ce_timeline"

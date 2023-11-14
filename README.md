@@ -43,7 +43,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 https://simonkoehler.com/typo3-extensions/timeline-content-element
 
 ## Upgrade from version 3.xx to version 4.0.0
-No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
+Just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Installation
 Install the extension by downloading it in the extension manager or on https://extensions.typo3.org/extension/ce_timeline/.

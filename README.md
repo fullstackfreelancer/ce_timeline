@@ -84,10 +84,10 @@ lib.contentElement{
 Files you need to copy in order to overwrite them:
 
 Main Template file:
-https://github.com/koehlersimon/ce_timeline/blob/master/Resources/Private/Templates/Timeline.html
+https://github.com/fullstackfreelancer/ce_timeline/blob/master/Resources/Private/Templates/Timeline.html
 
 Partials:
-https://github.com/koehlersimon/ce_timeline/tree/master/Resources/Private/Partials
+https://github.com/fullstackfreelancer/ce_timeline/tree/master/Resources/Private/Partials
 
 ## Support & Service
 

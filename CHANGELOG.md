@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.0] - 2023-11-14
+### Added
+- Compatibility with TYPO3 12.4.7
+- Various compatibility updates PHP and config files
+
 ## [3.3.3] - 2022-04-23
 ### Added
 - Compatibility with TYPO3 11.5.8 tested

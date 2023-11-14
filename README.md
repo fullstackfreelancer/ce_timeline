@@ -4,19 +4,19 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 
 <table border="0">
     <tr>
-        <th>Latest version</b></th>
-        <td>3.3.3</td>
+        <th>Latest version</th>
+        <td>4.0.0</td>
     </tr>
     <tr>
-        <th>Status</b></th>
+        <th>Status</th>
         <td><strong>stable</strong></td>
     </tr>
     <tr>
-        <th>TYPO3 version</b></th>
-        <td>9.5.0 - 11.5.8</td>
+        <th>TYPO3 version</th>
+        <td>11.5.8 - 12.4.7</td>
     </tr>
     <tr>
-        <th>TER</b></th>
+        <th>TER</th>
         <td><a href="https://extensions.typo3.org/extension/ce_timeline/">Download</a></td>
     </tr>
 </table>
@@ -25,10 +25,10 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 
 ## Features
 
-- User friendly and very easy to handle
+- User friendly and easy to handle
 - Includes predefined light, dark and pink stylesheets
 - 100% responsive
-- 4 different entry types (time, text, textimage, html)
+- 4 different entry types (time, text, text & image, html)
 - Entries can be ordered manually
 - Optional header and text (rte) above each timeline
 - Does not require any JavaScript <sup>*</sup>
@@ -40,12 +40,9 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 <sup>*</sup> (the lightbox feature comes with its own, independent JavaScript!)
 
 ## Online DEMO and Screenshots
-Here's a little DEMO of the extension in action:
-https://simonkoehler.com
+Will be updated soon!
 
-<img width="600" src="https://simon-koehler.com/fileadmin/_processed_/2/2/csm_ce-timeline-preview_4b69c7cdba.jpg" alt="Screenshot TYPO3 Frontend">
-
-## Upgrade from version 3.3.2 to version 3.3.3
+## Upgrade from version 3.xx to version 4.0.0
 No special things to keep in mind, just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 
 ## Installation
@@ -94,8 +91,8 @@ https://github.com/koehlersimon/ce_timeline/tree/master/Resources/Private/Partia
 
 ## Support & Service
 
-If you have any problems with the extension, please let me know! Since this is open source, I only guarantee 100% expert support when I get paid, but I also like to support the community. Please don't hesitate to open an issue here on GitHub or send a message: https://simonkoehler.com/contact
+If you have any problems with the extension, please let me know! Don't hesitate to send a message: https://simonkoehler.com/contact
 
-## Help me to keep the System up-to-date!
+## Help me to keep this Extension up-to-date!
 
-Many times if there is a special request, I just do it for free. I believe in the power of open source and free software. I also believe in you and your projects. If you like my work and you want to ensure further development, please don't hesitate to make a donation here: https://paypal.me/typo3freelancer
+Many times if there is a special request, I just do it for free. I believe in the power of open source and free software. I also believe in you and your projects. If you like my work and you want to ensure further development, please don't hesitate to make a donation here: https://paypal.me/fullstackfreelancer

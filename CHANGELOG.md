@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [4.0.1] - 2023-11-14
+### Added
+- Header field of timeline records is not mandatory anymore
+- Various compatibility updates PHP and config files
+
 ## [4.0.0] - 2023-11-14
 ### Added
 - Compatibility with TYPO3 12.4.7

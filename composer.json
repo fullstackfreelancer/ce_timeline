@@ -1,7 +1,6 @@
 {
     "name": "fullstackfreelancer/ce-timeline",
     "type": "typo3-cms-extension",
-    "version": "4.0.2",
     "description": "Enables a new content element of type Timeline",
     "homepage": "https://simonkoehler.com",
     "authors": [

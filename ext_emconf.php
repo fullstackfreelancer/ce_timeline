@@ -1,5 +1,5 @@
 <?php
-$EM_CONF['ce_timeline'] = array (
+$EM_CONF['ce_timeline'] =  [
     'title' => 'Timeline Content Element',
     'description' => 'Add a new content element of type "Timeline" for displaying histories of companies and more...',
     'category' => 'fe',
@@ -11,15 +11,15 @@ $EM_CONF['ce_timeline'] = array (
     'clearCacheOnLoad' => 0,
     'version' => '4.0.2',
     'constraints' =>
-    array (
-        'depends' => array (
+     [
+        'depends' =>  [
             'typo3' => '11.5.0-12.4.99'
-        ),
-        'conflicts' => array (
+        ],
+        'conflicts' =>  [
 
-        ),
-        'suggests' => array (
+        ],
+        'suggests' =>  [
 
-        ),
-    )
-);
+        ],
+    ]
+];

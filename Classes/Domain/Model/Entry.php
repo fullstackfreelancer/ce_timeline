@@ -47,7 +47,7 @@ class Entry extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * @param int $typeof
      * @return void
      */
-    public function setTypeof($typeof)
+    public function setTypeof($typeof): void
     {
         $this->typeof = $typeof;
     }

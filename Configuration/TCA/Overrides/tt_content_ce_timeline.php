@@ -8,9 +8,9 @@ call_user_func(function () {
 		'tt_content',
 		'CType',
 		[
-			'LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_title',
-			'ce_timeline',
-			'ce-timeline-icon'
+			'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_title',
+			'value' => 'ce_timeline',
+			'icon'  => 'ce-timeline-icon'
 		],
 		'header',
 		'after'

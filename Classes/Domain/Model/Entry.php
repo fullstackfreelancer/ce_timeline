@@ -16,8 +16,8 @@ class Entry extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity
      * media
      *
      * @var \TYPO3\CMS\Extbase\Persistence\ObjectStorage<\TYPO3\CMS\Extbase\Domain\Model\FileReference>
-     * @Cascade remove
      */
+    #[Cascade(['value' => 'remove'])] // remove
     protected $media = null;
 
 

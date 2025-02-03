@@ -7,8 +7,6 @@ $EM_CONF['ce_timeline'] =  [
     'author_email' => 'info@simonkoehler.com',
     'author_company' => 'simonkoehler.com',
     'state' => 'stable',
-    'uploadfolder' => '0',
-    'clearCacheOnLoad' => 0,
     'version' => '4.0.2',
     'constraints' =>
      [

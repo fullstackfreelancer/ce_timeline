@@ -36,7 +36,7 @@ return RectorConfig::configure()
     ])
     ->withConfiguredRule(ExtEmConfRector::class, [
         ExtEmConfRector::PHP_VERSION_CONSTRAINT => '8.3.0-8.4.99',
-        ExtEmConfRector::TYPO3_VERSION_CONSTRAINT => '11.5.0-12.4.99',
+        ExtEmConfRector::TYPO3_VERSION_CONSTRAINT => '12.4.0-12.4.99',
         ExtEmConfRector::ADDITIONAL_VALUES_TO_BE_REMOVED => []
     ])
     ->withImportNames(importNames: false, importDocBlockNames: false, importShortClasses: false, removeUnusedImports: true)
@@ -45,8 +45,6 @@ return RectorConfig::configure()
         // @see https://github.com/sabbelasichon/typo3-rector/issues/2536
         __DIR__ . '/**/Configuration/ExtensionBuilder/*',
         NameImportingPostRector::class => [
-            'ext_localconf.php', // This line can be removed since TYPO3 11.4, see https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/11.4/Important-94280-MoveContentsOfExtPhpIntoLocalScopes.html
-            'ext_tables.php', // This line can be removed since TYPO3 11.4, see https://docs.typo3.org/c/typo3/cms-core/main/en-us/Changelog/11.4/Important-94280-MoveContentsOfExtPhpIntoLocalScopes.html
             'ClassAliasMap.php',
         ],
         \Rector\Php74\Rector\Closure\ClosureToArrowFunctionRector::class,

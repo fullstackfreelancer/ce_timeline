@@ -20,6 +20,7 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime'
         ],
+        'hideTable' => true,
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline-record.svg',
     ],
     'types' => [

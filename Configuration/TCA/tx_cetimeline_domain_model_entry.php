@@ -23,20 +23,49 @@ return [
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline-record.svg',
     ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, --div--;Galerie, --palette--;;dimensions,--palette--;;lightbox, --div--;Access, starttime, endtime'],
+        '1' => [
+            'showitem' => '
+                  l10n_parent, l10n_diffsource,
+                  --palette--;;settings,
+                  --palette--;;titles,
+                  description, description_html,
+
+                --div--;Galerie,
+                  --palette--;;dimensions,
+                  --palette--;;lightbox,
+
+                --div--;Access,
+                  starttime, endtime'
+        ],
     ],
     'palettes' =>[
         'settings' =>[
-            'showitem' => 'position,typeof, hidden',
+            'showitem' => '
+                position,
+                typeof,
+                hidden',
         ],
         'titles' =>[
-            'showitem' => 'header,header_layout',
+            'showitem' => '
+                header,
+                header_layout',
         ],
         'dimensions' =>[
-            'showitem' => 'media, --linebreak--,textimage_layout,image_width, image_height,images_per_row, gallery_width',
+            'showitem' => '
+                media,
+                --linebreak--,
+
+                textimage_layout,
+                image_width,
+                image_height,
+                images_per_row,
+                gallery_width',
         ],
         'lightbox' =>[
-            'showitem' => 'enable_lightbox,lightbox_width,lightbox_height',
+            'showitem' => '
+                enable_lightbox,
+                lightbox_width,
+                lightbox_height',
         ],
     ],
     'columns' => [

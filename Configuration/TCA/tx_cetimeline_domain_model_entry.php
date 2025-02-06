@@ -58,6 +58,8 @@ return [
                 textimage_layout,
                 image_width,
                 image_height,
+                --linebreak--,
+
                 images_per_row,
                 gallery_width',
         ],

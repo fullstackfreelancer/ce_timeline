@@ -8,7 +8,6 @@ return [
         'sortby' => 'sorting',
         'tstamp' => 'tstamp',
         'crdate' => 'crdate',
-        'cruser_id' => 'cruser_id',
         'languageField' => 'sys_language_uid',
         'transOrigPointerField' => 'l10n_parent',
         'transOrigDiffSourceField' => 'l10n_diffsource',
@@ -21,26 +20,55 @@ return [
             'starttime' => 'starttime',
             'endtime' => 'endtime'
         ],
+        'hideTable' => true,
         'iconfile' => 'EXT:ce_timeline/Resources/Public/Icons/content-timeline-record.svg',
     ],
-    'interface' => [
-        'showRecordFieldList' => 'sys_language_uid, l10n_parent, header, header_layout, description, description_html, position, typeof, media, starttime, endtime',
-    ],
     'types' => [
-        '1' => ['showitem' => 'l10n_parent, l10n_diffsource, --palette--;;settings, --palette--;;titles, description, description_html, --div--;Galerie, --palette--;;dimensions,--palette--;;lightbox, --div--;Access, starttime, endtime'],
+        '1' => [
+            'showitem' => '
+                  l10n_parent, l10n_diffsource,
+                  --palette--;;settings,
+                  --palette--;;titles,
+                  description, description_html,
+
+                --div--;Galerie,
+                  --palette--;;dimensions,
+                  --palette--;;lightbox,
+
+                --div--;Access,
+                  starttime, endtime'
+        ],
     ],
     'palettes' =>[
         'settings' =>[
-            'showitem' => 'position,typeof, hidden',
+            'showitem' => '
+                position,
+                typeof,
+                hidden',
         ],
         'titles' =>[
-            'showitem' => 'header,header_layout',
+            'showitem' => '
+                header,
+                header_layout',
         ],
         'dimensions' =>[
-            'showitem' => 'media, --linebreak--,textimage_layout,image_width, image_height,images_per_row, gallery_width',
+            'showitem' => '
+                media,
+                --linebreak--,
+
+                textimage_layout,
+                image_width,
+                image_height,
+                --linebreak--,
+
+                images_per_row,
+                gallery_width',
         ],
         'lightbox' =>[
-            'showitem' => 'enable_lightbox,lightbox_width,lightbox_height',
+            'showitem' => '
+                enable_lightbox,
+                lightbox_width,
+                lightbox_height',
         ],
     ],
     'columns' => [
@@ -48,29 +76,18 @@ return [
             'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.language',
             'config' => [
-                'type' => 'select',
-                'renderType' => 'selectSingle',
-                'special' => 'languages',
-                'items' => [
-                    [
-                        'LLL:EXT:lang/locallang_general.xlf:LGL.allLanguages',
-                        -1,
-                        'flags-multiple'
-                    ]
-                ],
-                'default' => 0,
+                'type' => 'language',
             ],
         ],
         'l10n_parent' => [
             'displayCond' => 'FIELD:sys_language_uid:>:0',
-            'exclude' => true,
             'label' => 'LLL:EXT:lang/locallang_general.xlf:LGL.l18n_parent',
             'config' => [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['', 0],
+                    ['label' => '', 'value' => 0],
                 ],
                 'foreign_table' => 'tx_cetimeline_domain_model_entry',
                 'foreign_table_where' => 'AND tx_cetimeline_domain_model_entry.pid=###CURRENT_PID### AND tx_cetimeline_domain_model_entry.sys_language_uid IN (-1,0)',
@@ -88,7 +105,7 @@ return [
                 'type' => 'check',
                 'items' => [
                     '1' => [
-                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                        'label' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
                     ]
                 ],
             ],
@@ -98,10 +115,8 @@ return [
             'l10n_mode' => 'mergeIfNotBlank',
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.starttime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
+                'type' => 'datetime',
                 'size' => 13,
-                'eval' => 'datetime',
                 'default' => 0,
             ]
         ],
@@ -110,10 +125,8 @@ return [
             'l10n_mode' => 'mergeIfNotBlank',
             'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.endtime',
             'config' => [
-                'type' => 'input',
-                'renderType' => 'inputDateTime',
+                'type' => 'datetime',
                 'size' => 13,
-                'eval' => 'datetime',
                 'default' => 0,
                 'range' => [
                     'upper' => mktime(0, 0, 0, 1, 1, 2038)
@@ -143,7 +156,7 @@ return [
                 'type' => 'check',
                 'items' => [
                     '1' => [
-                        '0' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
+                        'label' => 'LLL:EXT:lang/locallang_core.xlf:labels.enabled'
                     ]
                 ],
             ],
@@ -162,14 +175,14 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['1', 1],
-                    ['2', 2],
-                    ['3', 3],
-                    ['4', 4],
-                    ['5', 5],
-                    ['6', 6],
-                    ['7', 7],
-                    ['8', 8]
+                    ['label' => '1', 'value' => 1],
+                    ['label' => '2', 'value' => 2],
+                    ['label' => '3', 'value' => 3],
+                    ['label' => '4', 'value' => 4],
+                    ['label' => '5', 'value' => 5],
+                    ['label' => '6', 'value' => 6],
+                    ['label' => '7', 'value' => 7],
+                    ['label' => '8', 'value' => 8]
                 ],
                 'default' => '1'
             ],
@@ -188,8 +201,8 @@ return [
                 'type' => 'select',
                 'renderType' => 'selectSingle',
                 'items' => [
-                    ['33%', 33],
-                    ['50%', 50]
+                    ['label' => '33%', 'value' => 33],
+                    ['label' => '50%', 'value' => 50]
                 ],
                 'default' => '50'
             ],
@@ -266,10 +279,10 @@ return [
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textblock', 0],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.timeentry', 1],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textimage', 2],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.html', 3],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textblock', 'value' => 0],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.timeentry', 'value' => 1],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.textimage', 'value' => 2],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.typeof.html', 'value' => 3],
                 ],
             ]
         ],
@@ -289,13 +302,13 @@ return [
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.default', 0],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h1', 1],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h2', 2],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h3', 3],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h4', 4],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h5', 5],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h6', 6]
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.default', 'value' => 0],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h1', 'value' => 1],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h2', 'value' => 2],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h3', 'value' => 3],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h4', 'value' => 4],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h5', 'value' => 5],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.header_layout.h6', 'value' => 6]
                 ],
             ]
         ],
@@ -314,10 +327,10 @@ return [
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.top', 0],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.bottom', 1],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.left', 2],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.right', 3]
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.top', 'value' => 0],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.bottom', 'value' => 1],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.left', 'value' => 2],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.textimage_layout.right', 'value' => 3]
                 ],
             ]
         ],
@@ -375,8 +388,8 @@ return [
                 'renderType' => 'selectSingle',
                 'default' => 0,
                 'items' => [
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.position.left', 0],
-                    ['LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.position.right', 1],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.position.left', 'value' => 0],
+                    ['label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang_db.xlf:tx_cetimeline_domain_model_entry.position.right', 'value' => 1],
                 ],
             ]
         ],

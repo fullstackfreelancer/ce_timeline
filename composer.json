@@ -1,7 +1,6 @@
 {
     "name": "fullstackfreelancer/ce-timeline",
     "type": "typo3-cms-extension",
-    "version": "4.0.2",
     "description": "Enables a new content element of type Timeline",
     "homepage": "https://simonkoehler.com",
     "authors": [
@@ -25,7 +24,7 @@
     },
     "license": "GPL-3.0-or-later",
     "require": {
-        "typo3/cms-core": "^11.8 || ^12.0"
+        "typo3/cms-core": "^12.0"
     },
     "keywords": [
         "TYPO3",
@@ -40,6 +39,9 @@
         "chronologisch",
         "chronologic"
     ],
+    "replace": {
+        "simonkoehler/ce-timeline": "self.version"
+    },
     "extra": {
         "typo3/cms": {
             "extension-key": "ce_timeline"

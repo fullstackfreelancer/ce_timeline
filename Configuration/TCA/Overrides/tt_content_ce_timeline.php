@@ -8,23 +8,23 @@ call_user_func(function () {
 		'tt_content',
 		'CType',
 		[
-			'LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_title',
-			'ce_timeline',
-			'ce-timeline-icon'
+			'label' => 'LLL:EXT:ce_timeline/Resources/Private/Language/locallang.xlf:ce_title',
+			'value' => 'ce_timeline',
+			'icon'  => 'ce-timeline-icon'
 		],
 		'header',
 		'after'
 	);
 
 	// New palette textfields
-	$GLOBALS['TCA']['tt_content']['palettes']['textfields'] = array(
+	$GLOBALS['TCA']['tt_content']['palettes']['textfields'] = [
 			'showitem' => 'header, header_layout, header_position, --linebreak--, bodytext','canNotCollapse' => 1
-	);
+	];
 
 	// New palette main
-	$GLOBALS['TCA']['tt_content']['palettes']['main'] = array(
+	$GLOBALS['TCA']['tt_content']['palettes']['main'] = [
   			'showitem' => 'timeline_entries, --palette--;;textfields','canNotCollapse' => 1
-	);
+	];
 
 	$GLOBALS['TCA']['tt_content']['ctrl']['typeicon_classes']['ce_timeline'] = 'ce-timeline-icon';
 	$GLOBALS['TCA']['tt_content']['types']['ce_timeline'] = [

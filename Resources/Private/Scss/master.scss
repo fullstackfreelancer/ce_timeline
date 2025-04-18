@@ -74,7 +74,7 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 		      right: auto;
 		    }
 	  	}
-		li{
+		li.ce-timeline-entry{
 			padding: 1rem;
 			border: $panel-border-width solid $panel-border-color;
 			border-image: linear-gradient(to right, $panel-border-color-secondary 0%, $panel-border-color 100%);

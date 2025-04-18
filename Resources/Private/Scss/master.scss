@@ -9,7 +9,7 @@ $panel-arrow-color: #ccc !default;
 $panel-background-color: transparent !default;
 $panel-headings-color: inherit !default;
 $panel-text-color: inherit !default;
-$panel-link-color: red !default;
+$panel-link-color: inherit !default;
 $panel-border-width: 2px !default;
 $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 
@@ -284,10 +284,6 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 						margin-left: 20px;
 					}
 				}
-			}
-
-			p{
-				margin-bottom: 0;
 			}
 
 		}

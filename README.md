@@ -15,7 +15,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 <sup>*</sup> (the lightbox feature comes with its own, independent JavaScript!)
 
 ## Online DEMO and Screenshots
-https://simonkoehler.com/typo3-extensions/timeline-content-element
+https://kohlercode.com/products/typo3-extensions/timeline-extension
 
 ## Upgrade from version 3.xx to version 4.0.0
 Just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
@@ -66,7 +66,7 @@ https://github.com/fullstackfreelancer/ce_timeline/tree/master/Resources/Private
 
 ## Support & Service
 
-If you have any problems with the extension, please let me know! Don't hesitate to send a message: https://simonkoehler.com/contact
+If you have any problems with the extension, please let me know! Don't hesitate to send a message: https://kohlercode.com/contact
 
 ## Help me to keep this Extension up-to-date!
 

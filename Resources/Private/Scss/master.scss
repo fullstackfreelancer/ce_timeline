@@ -183,6 +183,11 @@ $panel-shadow: 4px 4px 30px rgba(0,0,0,0.1) !default;
 			}
 
 			&.text-image{
+
+				header{
+					font-weight: bold;
+				}
+
 				// Default styles for gallery of all types
 				.ce-timeline-gallery{
 					display: block;

@@ -40,6 +40,9 @@
         "chronologisch",
         "chronologic"
     ],
+    "replace": {
+        "simonkoehler/ce-timeline": "self.version"
+    },
     "extra": {
         "typo3/cms": {
             "extension-key": "ce_timeline"

@@ -14,6 +14,10 @@
     ],
     "funding": [
         {
+            "type": "bitcoin",
+            "url": "bitcoin:bc1qtjxvpf2z7s62pr030vsrfmed9qkytag59j3j46"
+        },
+        {
             "type": "patreon",
             "url": "https://www.patreon.com/typo3freelancer"
         },

@@ -17,6 +17,12 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 ## Online DEMO and Screenshots
 https://kohlercode.com/products/typo3-extensions/timeline-extension
 
+## Websites that actually use the plugin
+- https://www.bierschneider.de/unternehmen/historie/
+- https://www.carat.de/ueber-uns/carat-story
+- https://50jahre.leasingverband.de/#c1430
+- https://www.villingen-schwenningen.de/tourismus-erleben/stadtportrait/geschichte-villingen/
+
 ## Upgrade from version 3.xx to version 4.0.0
 Just install and overwrite the extension. If you get an error in the frontend or backend, make sure your caches have been cleared.
 

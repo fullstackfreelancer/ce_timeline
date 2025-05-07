@@ -18,6 +18,7 @@ This extension provides a new content element of type "Timeline" (ce_timeline) t
 https://kohlercode.com/products/typo3-extensions/timeline-extension
 
 ## Websites that actually use the plugin
+- https://www.micro-epsilon.de/unternehmen/geschichte/
 - https://www.bierschneider.de/unternehmen/historie/
 - https://www.carat.de/ueber-uns/carat-story
 - https://50jahre.leasingverband.de/#c1430

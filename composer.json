@@ -14,18 +14,22 @@
     ],
     "funding": [
         {
+            "type": "patreon",
+            "url": "https://www.patreon.com/typo3freelancer"
+        },
+        {
             "type": "paypal",
             "url": "https://paypal.me/fullstackfreelancer"
         }
     ],
     "support": {
         "email": "simon@kohlercode.com",
-        "docs": "https://kohlercode.com/contact",
+        "docs": "https://github.com/fullstackfreelancer/ce_timeline",
         "issues": "https://github.com/fullstackfreelancer/ce_timeline/issues"
     },
     "license": "GPL-3.0-or-later",
     "require": {
-        "typo3/cms-core": "^11.8 || ^13.0"
+        "typo3/cms-core": "^12.4.2 || ^13.4"
     },
     "keywords": [
         "TYPO3",

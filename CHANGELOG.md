@@ -1,6 +1,12 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.0] - 2025-05-07
+### Added
+- Optimized CSS to make lists look better
+- Sets for TYPO3 v13 integrated
+- TCA optimization / updates
+
 ## [4.0.2] - 2023-11-14
 ### Added
 - Changed composer vendor name from "simonkoehler" to "fullstackfreelancer"

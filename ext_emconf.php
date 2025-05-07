@@ -13,7 +13,7 @@ $EM_CONF['ce_timeline'] = array (
     'constraints' =>
     array (
         'depends' => array (
-            'typo3' => '11.8.99-13.4.99'
+            'typo3' => '12.4.2-13.4.99'
         ),
         'conflicts' => array (
 

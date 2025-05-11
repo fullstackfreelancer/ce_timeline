@@ -1,6 +1,11 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.1] - 2025-05-10
+### Added
+- Added another Set for the Lightbox JavaScript
+- Added Documentation
+
 ## [5.0.0] - 2025-05-07
 ### Added
 - Optimized CSS to make lists look better

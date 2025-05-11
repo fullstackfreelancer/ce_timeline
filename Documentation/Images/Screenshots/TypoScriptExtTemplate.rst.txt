@@ -1,0 +1,2 @@
+.. figure:: /Images/Screenshots/TypoScriptExtTemplate.png
+   :class: with-shadow

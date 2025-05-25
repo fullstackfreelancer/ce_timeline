@@ -1,5 +1,5 @@
 <?php
-namespace SIMONKOEHLER\Osp\Domain\Model;
+namespace SIMONKOEHLER\CeTimeline\Domain\Model;
 use TYPO3\CMS\Extbase\Annotation\ORM\Cascade;
 
 class Entry extends \TYPO3\CMS\Extbase\DomainObject\AbstractEntity

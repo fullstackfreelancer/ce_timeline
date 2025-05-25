@@ -1,6 +1,10 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
+## [5.0.2] - 2025-05-25
+### Added
+- Fixed namespace path in Domain/Model/Entry.php
+
 ## [5.0.1] - 2025-05-11
 ### Added
 - Added another Set for the Lightbox JavaScript
